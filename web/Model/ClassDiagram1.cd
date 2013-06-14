@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Nextgal.ECare.Model.Assisted.Dao.ActiveFacilityDao" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAQAARAFAAEAAAwAAAAAAAAA=</HashCode>
+      <FileName>Assisted\Dao\ActiveFacilityDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Assisted.Dao.AssistedDao" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAQAAAAwAAAAQAABAFAAEAADwAAAAAAAAA=</HashCode>
+      <FileName>Assisted\Dao\AssistedDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Assisted.Dao.EmergencyNumberDao" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAQAAAAAAAAAQAABAFAAEAADwAAAAAAAAA=</HashCode>
+      <FileName>Assisted\Dao\EmergencyNumberDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Assisted.Dto.ActiveFacilityDto" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAACAAAAAAAEAACAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assisted\Dto\ActiveFacilityDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Assisted.Dto.AssistedDto" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEAAkAgCABSAHAS4AASBApQABAAABAQBAAAgZAAEAEg=</HashCode>
+      <FileName>Assisted\Dto\AssistedDto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Assisted.Dto.EmergencyNumberDto" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAQEAACACAAAAAABgAQAAAAAIAAAEAA=</HashCode>
+      <FileName>Assisted\Dto\EmergencyNumberDto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Assisted.Facade.AssistedFacade" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAABIIQBBACQQAAAAAARQBAACAAAAAAQACgABA=</HashCode>
+      <FileName>Assisted\Facade\AssistedFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Event.Dao.EventDao">
+    <Position X="5.5" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAQAAAAAAAAAQACBAFAREAACwAAAAAAAAA=</HashCode>
+      <FileName>Event\Dao\EventDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Event.Dto.CustomEventDto" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAkCgAEAICAAAAAAEAAAAQBAAAAKAAAAAA=</HashCode>
+      <FileName>Event\Dto\CustomEventDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Event.Dto.EventDto">
+    <Position X="8.25" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAkCgAEAICAAAAAAEAAAAABAAAACAAAAAA=</HashCode>
+      <FileName>Event\Dto\EventDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Event.Facade.EventFacade">
+    <Position X="2.75" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAAAAIAABAAAAAAAAABABAQAAAAIAAAAAABAA=</HashCode>
+      <FileName>Event\Facade\EventFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Message.Dao.MessageDao" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAQAAAAAAAAAAAABABAAEAADwAEJAAQBAg=</HashCode>
+      <FileName>Message\Dao\MessageDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Message.Dto.CustomMessageDto" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACCAAgggEEAICAIAAAIoBAAAQBAAAiKJAIAAA=</HashCode>
+      <FileName>Message\Dto\CustomMessageDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Message.Dto.MessageDto" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAACCAJAgAAEAACAIAAAAABAAAAAAAAAAgAAgAA=</HashCode>
+      <FileName>Message\Dto\MessageDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Message.Dto.ReplyDto" Collapsed="true">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAggAEAIAAICAAAAAAAAABAAAACAAAAAA=</HashCode>
+      <FileName>Message\Dto\ReplyDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Message.Facade.MessageFacade" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAAAAAAAAAAAAAAAAABABAACCAgAAIgAAQAAA=</HashCode>
+      <FileName>Message\Facade\MessageFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Notification.Dao.NotificationDao" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAQAAAIgAAAAQAABAFAAEAACwgAAAAAAEg=</HashCode>
+      <FileName>Notification\Dao\NotificationDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Notification.Dto.NotificationDto" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgFAARaCDAAAgAEAECAAABgAUBAAAAAIAAAABAAAIA=</HashCode>
+      <FileName>Notification\Dto\NotificationDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Notification.Facade.NotificationFacade" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAIABAABAAABABAAAAAAAkAAAAIAEg=</HashCode>
+      <FileName>Notification\Facade\NotificationFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Position.Dao.AdditionalInformationDao">
+    <Position X="12.25" Y="5.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAQAAAAAAAAAIAABABAAEAAAwAAAAAAAAg=</HashCode>
+      <FileName>Position\Dao\AdditionalInformationDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Position.Dao.PositionDao">
+    <Position X="12.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAYAAACAAAAQAABAAAAAAAAABABgAECAAwABAIDAAAA=</HashCode>
+      <FileName>Position\Dao\PositionDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.PocketLocator.Model.Position.Dto.AdditionalInformationDto">
+    <Position X="15" Y="5.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgAAACAAAAAAAAAICAAAAAAAQAAAABAAAgAAAAAgA=</HashCode>
+      <FileName>Position\Dto\AdditionalInformationDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Position.Dto.MonitoringReportDto" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAGAgAAAAAIAAKIAAAAAAAAAAAACAAACAAAAAQ=</HashCode>
+      <FileName>Position\Dto\MonitoringReportDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Position.Dto.MonitoringRoutesRowDto" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAGgkCAAAAEAIKIACgAJAAgAACBABgIAAAAAAA=</HashCode>
+      <FileName>Position\Dto\MonitoringRoutesRowDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Position.Dto.PositionDto">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAEAQAAAEAICIAAgAAAAAAACBAAAAAAAEAAA=</HashCode>
+      <FileName>Position\Dto\PositionDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Position.Facade.PositionFacade">
+    <Position X="9.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAIRAAAAAgIAADABAAACAEgABBIDAAAg=</HashCode>
+      <FileName>Position\Facade\PositionFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.Position.Facade.PositionUtils">
+    <Position X="17" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAQAAAAAAAAAAAAAABAAAgQ=</HashCode>
+      <FileName>Position\Facade\PositionUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.User.Dao.UserDao" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAARAAAAAAAAAAAABABAAAAACCAAAAAAAAA=</HashCode>
+      <FileName>User\Dao\UserDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.User.Dao.ZoneDao" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAQAAAAgAAAAQAADAFAAEAACwAAAAAAAAA=</HashCode>
+      <FileName>User\Dao\ZoneDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.User.Dto.LoginResultDto" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAgAAACAAAAAAAQAAAAQQAAABAAAACAAQQAAAAAAA=</HashCode>
+      <FileName>User\Dto\LoginResultDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nextgal.ECare.Model.User.Dto.UserDto" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAABgAAACCAAAAQAQAAAAQQABARAAAACAIAwAAAEAAA=</HashCode>
+      <FileName>User\Dto\UserDto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Nextgal.ECare.Model.User.Dto.ZoneDto" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAAgAAAACAAAAQkAEAAAAQAAAAAAAAAIAAAAAAEAAA=</HashCode>
+      <FileName>User\Dto\ZoneDto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Nextgal.ECare.Model.User.Facade.UserFacade" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBASAAAAAAAAAAAAAAAAAABABQBAAAAAAAAQAAAAEEA=</HashCode>
+      <FileName>User\Facade\UserFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

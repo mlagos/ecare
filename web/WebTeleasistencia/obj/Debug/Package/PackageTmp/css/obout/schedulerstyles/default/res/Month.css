@@ -1,0 +1,105 @@
+﻿body
+{
+	margin:0px;
+}
+.MonthTable
+{
+	width:100%;
+	height:100px;
+}
+.MonthTd
+{
+	border-left:solid 1px #CEDFEF;	
+	border-bottom:solid 1px #CEDFEF;		
+	padding:0px;
+}
+/*Style for today date*/
+.MonthTdToday
+{
+	background-color:#FFFFCE;
+	border-left:solid 1px #CEDFEF;	
+	border-bottom:solid 1px #CEDFEF;		
+	padding:0px;
+}
+.DayHeaderTable
+{
+	background-color:#EFEFF7;
+	width:100%;
+	height:17px;
+}
+/*Header for today date*/
+.DayHeaderTableToday
+{
+	background-color:#BDCFDE;
+	width:100%;
+	height:17px;
+}
+
+.DayHeaderContent
+{
+	font-family:Verdana;
+	font-size:7pt;
+	padding-right:3px;
+}
+.InMonth
+{
+	color:#666666;
+}
+.OffMonth
+{
+	color:#BBBBBB;
+}
+.GrayCover
+{
+	display:none;
+	position:absolute;
+	background-color:Gray;
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;	
+}
+.dayEventText
+{
+    position:absolute;
+	overflow:hidden;
+	white-space:nowrap;
+	font-family:Arial;
+	font-size:8pt;
+	text-decoration:none;
+	cursor:pointer;
+}
+.dayEventTextBlur
+{
+    position:absolute;
+	font-family:Arial;
+	font-size:8pt;
+	text-decoration:none;
+	cursor:pointer;
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;	
+}
+.moreText
+{
+    position:absolute;
+    height:16px;
+	font-family:Arial;
+	font-size:7pt;
+	color:Blue;
+	text-decoration:underline;
+	cursor:pointer;	
+	text-align:center;
+}
+.txtEventDetailHeaderDate
+{
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:Blue;
+}
+.txtEventDetailHeaderDay
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:Black;
+}

@@ -1,0 +1,55 @@
+﻿#home_content
+{
+	position: absolute;
+	/*nos posicionamos en el centro del navegador*/
+	top:50%;
+	left:50%;
+	/*determinamos una anchura*/
+	width:739px;
+	/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+	margin-left:-369px;
+	/*determinamos una altura*/
+	height:455px;
+	/*indicamos que el margen superior, es la mitad de la altura*/
+	margin-top:-227px;
+	padding:5px;
+	/*Imagen de fondo*/
+	background-image: url('images/login_form.gif');
+}
+/*
+#ic_title
+{
+	position: relative;
+	left: 20px;
+	top: 140px;
+	line-height: 0px;
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #C3C4C6;
+	height: 170px;
+	background-image: url('images/login_logo.jpg');
+	background-repeat:no-repeat;
+}
+#ic_title a
+{
+	text-decoration: none;
+	font-size: 20pt;
+	font-weight:bold;
+	color: #C3C4C6;
+}
+
+#ic_title a:hover
+{
+	color: #8B8B8B;
+}
+*/
+#hmenu_image
+{
+	position: relative;
+	left: 0px;
+	top: 12px;
+	background-image: url('images/logotab_movistar.png');
+	background-repeat:no-repeat;
+	width: 105px;
+	height: 32px;
+}

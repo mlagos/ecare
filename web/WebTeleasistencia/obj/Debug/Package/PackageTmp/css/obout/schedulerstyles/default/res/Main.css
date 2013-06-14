@@ -1,0 +1,182 @@
+﻿.Scheduler_MainTable
+{
+	width:100%;
+	background:white;
+}
+.Scheduler_MainTable_Invi
+{
+	width:100%;
+	background:white;
+	filter:alpha(opacity=0);
+	-moz-opacity:0.0;
+	opacity:0.0;	
+}
+
+.btnDayBack_Css
+{
+	cursor:pointer;
+}
+.btnDayForward_Css
+{
+	cursor:pointer;
+}
+
+.btnToday_Css
+{
+	
+	font-family:Arial;
+	font-size:8pt;
+	vertical-align:middle;
+	padding: 0pt 1px;
+}
+.txtDate_Css
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:bold;	
+}
+
+.Td_Css
+{
+	padding-left:3px;
+}
+
+.btnView_Css
+{
+	background-color:#DDDDDD;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:10pt;
+}
+.btnView_Down_Css
+{
+	background-color:#C6DBFF;
+	cursor:default;
+	font-family:Arial;
+	font-size:10pt;
+}
+.ContentContainer
+{
+}
+
+.CreateEventBox
+{
+	position:absolute;
+	background-color:#C6DBFF;
+	border:solid thin #C6DBFF;	
+}
+.txtSubject
+{
+	font-family:Arial;
+	font-size:10pt;
+	width:250px;
+}
+.btnCreateEvent
+{
+	font-family:Arial;
+	font-size:10pt;
+}
+.btnCreateBox_EditEventDetail
+{
+	font-family:Arial;
+	font-size:10pt;	
+}
+.CreateEventBoxTitle
+{
+}
+.btnCreateEventClose
+{
+	cursor:pointer;
+}
+.divLoadingPanel
+{
+	background-color:#DDDDDD;
+	text-align:center;
+	vertical-align:middle;
+	position:absolute;
+}
+.EditEventBox
+{
+	position:absolute;
+	background-color:White;
+	border:solid thin #C6DBFF;	
+}
+.EditEventBoxSubject
+{
+	font-family:Arial;
+	font-size:12pt;		
+	font-weight:bold;
+	color:darkblue;
+	overflow:hidden;
+}
+.btnEditEventClose
+{
+	cursor:pointer;
+}
+.EditEventTime
+{
+}
+.btnDelete
+{
+	font-family:Arial;
+	font-size:10pt;	
+}
+.btnEditBox_EditEventDetail
+{
+	font-family:Arial;
+	font-size:10pt;		
+}
+.txtStatus
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:bold;
+	background-color:#FFD363;
+	color:Black;
+}
+.btnSmallCalendar
+{
+	width:6;
+	height:50px;
+	background-color:#C6DBFF;
+	background-image:url(ArrowRight.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+	cursor:pointer;
+}
+.btnSmallCalendar_Over
+{
+	width:6;
+	height:50px;
+	background-color:#C6DBFF;
+	background-image:url(ArrowRight.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+	border-top:solid 1px white;
+	border-left:solid 1px white;
+	border-bottom:solid 1px #739EBD;
+	border-right:solid 1px #739EBD;
+	cursor:pointer;
+}
+.btnSmallCalendar_Down
+{
+	width:6;
+	height:50px;
+	background-color:#739EBD;
+	background-image:url(ArrowRight.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+	border-bottom:solid 1px white;
+	border-right:solid 1px white;
+	cursor:pointer;
+}
+.txtLoading
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:Black;
+}
+.selCategories
+{
+    width:130px;
+}

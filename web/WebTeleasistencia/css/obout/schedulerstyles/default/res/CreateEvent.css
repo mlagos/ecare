@@ -1,0 +1,140 @@
+﻿body 
+{
+	margin:0px;
+	background-color:white;
+	font-family:Arial;
+	font-size:10pt;
+}
+.txtSubject
+{
+	width:100%;
+	border-width:1px;
+}
+.txtPlace
+{
+	width:100%;	
+	border-width:1px;
+}
+.txtDescription
+{
+	width:100%;
+	border-width:1px;
+}
+.ddRepeats
+{
+	width:150px;
+}
+.CssSeparator
+{
+	height:6px;
+}
+.txtStartDate
+{
+	width:100px;
+	border-width:1px;
+}
+.txtEndDate
+{
+	width:100px;
+	border-width:1px;
+}
+.txtStartTime
+{
+	width:80px;
+	border-width:1px;
+}
+.txtEndTime
+{
+	width:80px;
+	border-width:1px;
+}
+.tdText
+{
+	font-family:Arial;
+	font-size:10pt;	
+}
+.tdBackground
+{
+	background-color:#D6E7D6;
+}
+.btnBack
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:bold;
+	text-decoration:none;
+}
+.btnSave
+{
+	height:20px;
+	font-family:Arial;
+	font-size:9pt;
+}
+.btnCancel
+{
+	height:20px;
+	font-family:Arial;
+	font-size:9pt;
+}
+.RepeatSeparator
+{
+	height:1px;
+	background-color:#E7F3E7;
+}
+.txtRepeatSumary
+{
+	border:solid 1px #737973;
+	background-color:#B5D7B5;
+	font-family:Arial;
+	font-size:12pt;
+	padding:5px;
+	height:32px;
+}
+.txtRangeUntilDate
+{
+	width:100px;
+	border-width:1px;	
+}
+.textRepeatStartDate
+{
+	width:100px;
+	border-width:1px;	
+}
+
+td
+{
+	font-family:Arial;
+	font-size:10pt;	
+}
+.indent10px
+{
+	width:10px;
+}
+.customDropDown
+{
+	position:absolute;
+	border:solid 1px black;
+	background-color:White;
+	overflow:auto;
+}
+.customItem
+{
+	background-color:White;
+	color:Black;
+	font-family:Arial;
+	font-size:10pt;
+	cursor:pointer;
+	height:20px;
+	padding-left:5px;
+}
+.customItemOver
+{
+	background-color:#3169C6;
+	color:White;
+	font-family:Arial;
+	font-size:10pt;
+	cursor:pointer;
+	height:20px;
+	padding-left:5px;
+}
+

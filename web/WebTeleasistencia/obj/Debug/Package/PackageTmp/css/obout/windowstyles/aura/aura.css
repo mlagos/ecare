@@ -1,0 +1,820 @@
+﻿/*iframe:layer under window layer*/
+.auraIframeLayer
+{
+	border:0px;
+	background-color:white;
+	filter:alpha(opacity=0);
+	-moz-opacity:0.0;
+	opacity:0.0;
+}
+/*div:Layer contains window*/
+.auraWindowLayer
+{
+	display:none;
+}
+/*Master Table contains window parts*/
+.auraMasterTable
+{
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+	margin:0;
+}
+/*td*/
+.auraHeaderContainer
+{
+	height:30px;
+	width:100%;
+	vertical-align:top;
+	padding:0px;
+}
+/*td*/
+.auraToolbarContainer
+{
+	height:18px;
+	width:100%;
+	vertical-align:top;
+	padding:0px;
+}
+/*td*/
+.auraContentContainer
+{
+	width:100%;
+	padding:0px;
+	vertical-align:top;
+}
+/*td*/
+.auraFooterContainer
+{
+	height:21px;
+	width:100%;
+	vertical-align:top;
+	padding:0px;
+
+}
+
+.auraBottomLineContainer
+{
+	height:4px;
+	width:100%;
+	vertical-align:bottom;
+	padding:0px;
+}
+/*Header-----------------------------------------------------------------------------------------------*/
+/*td*/
+.auraHeaderTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0;
+}
+
+/*tr*/
+.auraHeaderTop
+{
+	display:none;
+}
+
+/*tr*/
+.auraHeaderBottom
+{
+	display:none;
+}
+
+
+
+/*td*/
+.auraHeaderTopLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.auraHeaderTopCenter
+{
+	height:0px;	
+	padding:0px;
+}
+/*td*/
+.auraHeaderTopRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+
+}
+/*td*/
+.auraHeaderMiddleLeft
+{
+	padding:0px;
+	width:4px;
+	height:30px;
+	background-image:url(HeaderMiddleLeft.gif);
+}
+/*td*/
+.auraHeaderMiddleCenter
+{
+	padding:0px;
+	height:30px;	
+	background-image:url(HeaderMiddleCenter.gif);
+	background-repeat:repeat;
+	
+}
+/*td*/
+.auraHeaderMiddleRight
+{
+	padding:0px;
+	width:4px;
+	height:30px;
+	background-image:url(HeaderMiddleRight.gif);
+}
+/*td*/
+.auraHeaderBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.auraHeaderBottomCenter
+{
+	height:0px;	
+	padding:0px;
+}
+/*td*/
+.auraHeaderBottomRight
+{
+	height:0px;
+	width:0px;	
+	padding:0px;
+}
+/*Small table inside header*/
+.auraHeaderInnerTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0;
+}
+/*td*/
+.auraHeaderLogoContainer
+{
+	width:1px;
+	padding:0px;
+	padding-left:5px;
+}
+/*img*/
+.auraHeaderLogo
+{
+	width:17px;
+	height:17px;
+}
+/*td*/
+.auraHeaderTitle
+{
+	padding:0px;
+	padding-left:2px;
+	cursor:default;
+
+}
+
+/*div*/
+.auraTitlePanel
+{
+	font-weight:bold;
+	font-family:Arial;
+	font-size:11px;
+	color:Black;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+/*div*/
+.auraTitlePanelDisable
+{
+	font-weight:bold;
+	font-family:Arial;
+	font-size:11px;
+	color:White;
+	overflow:hidden;
+	white-space:nowrap;		
+}
+
+
+
+/*Contain built-in buttons td*/
+/*td*/
+.auraHeaderBuiltinButtonsContainer
+{
+	width:85px;
+	height:19px;
+	background:url(BuiltinButtonsContainer.gif);
+	padding:0px;
+	padding-right:1px;
+	
+	
+}
+
+
+/*Buttons table*/
+.auraWindowBuiltinButtonsTable
+{
+	width:auto;
+	border-collapse:collapse;
+	margin:0;
+}
+
+
+/*Individual Button Container, it is the td cover button*/
+.auraButtonContainer
+{
+	padding:0px;
+	padding-right:2px;
+}
+/*Minimize Button*/
+/*img*/
+.auraButtonMinimizeOver
+{
+	width:17px;
+	height:17px;
+	background:url(MinimizeOver.gif);
+}
+/*img*/
+.auraButtonMinimizeDown
+{
+	width:17px;
+	height:17px;
+	background:url(MinimizeDown.gif);
+}
+
+
+/*img*/
+.auraButtonMinimizeOut
+{
+	width:17px;
+	height:17px;
+	background:url(MinimizeOut.gif);
+}
+
+
+
+
+/*Maximize Button*/
+/*img*/
+.auraButtonMaximizeOver
+{
+	width:17px;
+	height:17px;
+	background:url(MaximizeOver.gif);	
+}
+/*img*/
+.auraButtonMaximizeDown
+{
+	width:17px;
+	height:17px;
+	background:url(MaximizeDown.gif);	
+}
+/*img*/
+.auraButtonMaximizeOut
+{
+	width:17px;
+	height:17px;
+	background:url(MaximizeOut.gif);		
+}
+
+/*Restore Down Button*/
+/*img*/
+.auraButtonRestoreDownOver
+{
+	width:17px;
+	height:17px;
+	background:url(RestoreDownOver.gif);	
+}
+/*img*/
+.auraButtonRestoreDownDown
+{
+	width:17px;
+	height:17px;
+	background:url(RestoreDownDown.gif);	
+}
+/*img*/
+.auraButtonRestoreDownOut
+{
+	width:17px;
+	height:17px;
+	background:url(RestoreDownOut.gif);		
+}
+
+
+/*Close Button*/
+/*img*/
+.auraButtonCloseOver
+{
+	width:17px;
+	height:17px;
+	background:url(CloseOver.gif);	
+}
+/*img*/
+.auraButtonCloseDown
+{
+	width:17px;
+	height:17px;
+	background:url(CloseDown.gif);		
+}
+
+/*img*/
+.auraButtonCloseOut
+{
+	width:17px;
+	height:17px;
+	background:url(CloseOut.gif);		
+}
+
+/*Toolbar-----------------------------------------------------------------------------------------------*/
+.auraToolbarTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0;
+		
+}
+
+/*tr*/
+.auraToolbarTop
+{
+	display:none;
+}
+
+/*tr*/
+.auraToolbarBottom
+{
+	display:none;
+}
+
+
+/*td*/
+.auraToolbarTopLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.auraToolbarTopCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.auraToolbarTopRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.auraToolbarMiddleLeft
+{
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.auraToolbarMiddleCenter
+{
+	padding:0px;
+}
+/*td*/
+.auraToolbarMiddleRight
+{
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.auraToolbarBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.auraToolbarBottomCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.auraToolbarBottomRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*div*/
+.auraToolbarPanel
+{
+	background-color:Aqua;
+}
+
+
+/*Content-----------------------------------------------------------------------------------------------*/
+.auraContentTable
+{
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+	margin:0;
+	
+}
+
+/*tr*/
+.auraContentTop
+{
+	display:none;
+}
+
+/*tr*/
+.auraContentBottom
+{
+	display:none;
+}
+
+
+
+/*td*/
+.auraContentTopLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.auraContentTopCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.auraContentTopRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.auraContentMiddleLeft
+{
+	padding:0px;
+	width:4px;
+	background-image:url(ContentMiddleLeft.gif);
+	background-repeat:repeat;
+}
+/*td*/
+.auraContentMiddleCenter
+{
+	padding:0px;
+	vertical-align:top;
+	
+}
+/*td*/
+.auraContentMiddleRight
+{
+	padding:0px;
+	width:4px;
+	background-image:url(ContentMiddleRight.gif);
+	background-repeat:repeat;
+	
+}
+/*td*/
+.auraContentBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+	font-size:1px;
+}
+/*td*/
+.auraContentBottomCenter
+{
+	height:0px;
+	padding:0px;
+	font-size:1px;
+}
+/*td*/
+.auraContentBottomRight
+{
+	height:0%;
+	width:0px;
+	padding:0px;
+	font-size:1px;
+}
+
+/*IFRAME or DIV*/
+.auraContentPanel
+{
+	border:0px;
+	background-color:#FFFFFF;
+	overflow:hidden;
+	padding:0px;	
+}
+
+
+/*Footer-----------------------------------------------------------------------------------------------*/
+.auraFooterTable
+{
+	border-collapse:collapse;
+	margin:0;	
+	width:100%;
+}
+
+/*tr*/
+.auraFooterTop
+{
+	display:none;
+}
+
+/*tr*/
+.auraFooterBottom
+{
+	display:none;	
+}
+
+
+/*td*/
+.auraFooterTopLeft 
+{
+	padding:0px;
+}
+/*td*/
+.auraFooterTopCenter
+{
+	padding:0px;
+}
+/*td*/
+.auraFooterTopRight
+{
+	padding:0px;
+}
+/*td*/
+.auraFooterMiddleLeft
+{
+	width:4px;
+	padding:0px;
+	background-image:url(ContentMiddleLeft.gif);	
+}
+/*td*/
+.auraFooterMiddleCenter
+{
+	height:21px;
+	padding:0px;
+	background-image:url(FooterMiddleCenter.gif);	
+	background-repeat:repeat;
+	white-space:nowrap;	
+		
+}
+/*td*/
+.auraFooterMiddleRight
+{
+	width:18px;
+	height:21px;
+	padding:0px;
+	background-image:url(FooterMiddleRight.gif);
+
+}
+/*td*/
+.auraFooterBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+	background-color:#D6D3CE;
+}
+/*td*/
+.auraFooterBottomCenter
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.auraFooterBottomRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+	
+}
+/*div*/
+.auraFooterPanel
+{
+	cursor:default;
+	font-family:Tahoma;
+	font-size:11px;
+	padding-left:5px;
+	padding-top:1px;
+	overflow:hidden;
+	height:13px;
+	width:100%;
+	white-space:nowrap;
+}
+
+
+/*BottomLine-----------------------------------------------------------------------------------------------*/
+.auraBottomLineTable
+{
+	border-collapse:collapse;
+	margin:0;	
+	width:100%;
+}
+.auraBottomLineLeft
+{
+	width:4px;
+	height:4px;
+	padding:0px;
+	background-image:url(BottomLineLeft.gif);	
+}
+.auraBottomLineCenter
+{
+	height:4px;
+	padding:0px;
+	background-image:url(BottomLineCenter.gif);
+	background-repeat:repeat;
+}
+.auraBottomLineRight
+{
+	width:4px;
+	height:4px;
+	padding:0px;
+	background-image:url(BottomLineRight.gif);	
+}
+
+
+
+/*DragPanel-----------------------------------------------------------------------------------------------*/
+
+.auraDragPanel
+{
+	background-color:Gray;
+	filter:alpha(opacity=25);
+	-moz-opacity:0.25;
+	opacity:0.25;
+	z-index:999999999;	
+}
+
+/*Filter-----------------------------------------------------------------------------------------------*/
+
+.auraFilterIframeLayer
+{
+	border:0px;
+	filter:alpha(opacity=0);
+	-moz-opacity:0.0;
+	opacity:0.0;	
+}
+.auraFilterDivLayer
+{
+	background-color:gray;
+	filter:alpha(opacity=15);
+	-moz-opacity:0.15;
+	opacity:0.15;	
+}
+/*Window Resize-----------------------------------------------------------------------------------------------*/
+
+
+.auraResizeHandle
+{
+	position:absolute;
+	background-color:white;
+	filter:alpha(opacity=0);
+	-moz-opacity:0.0;
+	opacity:0.0;
+	font-size:1px;
+	height:4px;
+	width:4px;	
+}
+
+/*Handle cursor of mouseover*/
+.auraCursorResizeLeft
+{	
+	cursor:e-resize;
+}
+.auraCursorResizeTop
+{	
+	cursor:n-resize;
+}
+.auraCursorResizeRight
+{
+	cursor:w-resize;
+}
+
+.auraCursorResizeBottom
+{
+	cursor:s-resize;
+}
+
+.auraCursorResizeTopLeft
+{
+	cursor:nw-resize;	
+
+}
+
+.auraCursorResizeTopRight
+{
+	cursor:ne-resize;
+}
+
+.auraCursorResizeBottomRight
+{
+	cursor:se-resize;
+}
+
+.auraCursorResizeBottomLeft
+{
+	cursor:sw-resize;
+}
+/*The size of diagonal resize at each conner*/
+.auraResizeConnerSize
+{	
+	width:20px;
+	height:20px;
+	background-color:transparent;			
+}
+
+.auraResizePanel
+{
+	z-index:99999;
+	background-color:Gray;
+	filter:alpha(opacity=25);
+	-moz-opacity:0.25;
+	opacity:0.25;	
+}
+/*-BuiltinWindow------------------------------------------------*/
+
+.auraAlertContentTable
+{
+	width:100%;
+	height:100%;
+}
+
+.auraAlertLogoContainer
+{
+	padding:0px;
+	width:30px;
+	vertical-align:top;
+	padding-top:10px;
+	padding-left:15px;
+}
+.auraAlertMessageContainer
+{
+	padding:0px;
+	font-family:Verdana;
+	font-size:8pt;
+	vertical-align:top;
+	padding-top:15px;
+	padding-left:10px;
+}
+.auraAlertOKContainer
+{
+	padding:0px;
+	text-align:center;
+	vertical-align:bottom;
+	padding-bottom:10px;
+}
+.aurawarningLogo
+{
+	padding:0px;
+	width:32px;
+	height:32px;
+	background-image:url(windows-warning.png);
+}
+.aurainfoLogo
+{
+	padding:0px;
+	width:32px;
+	height:32px;
+	background-image:url(windows-info.png);
+}
+.auraerrorLogo
+{
+	padding:0px;
+	width:32px;
+	height:32px;
+	background-image:url(windows-error.png);
+}
+
+
+.auraAlertOKButton
+{
+	width:60px;
+}
+
+/*use to detect finsihed loading, do not change*/
+.auraEnd
+{
+	background-color:Transparent;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:9px;
+	width:9px;
+	font-size:1px;
+}
+

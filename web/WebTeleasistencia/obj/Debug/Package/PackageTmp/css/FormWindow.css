@@ -1,0 +1,66 @@
+﻿/*CollapsiblePanel*/
+
+.FormWindow_CollapsePanelHeader span 
+{
+	color:#000000;
+	font-weight:bold;
+	cursor: pointer;
+}
+
+.FormWindow_PanelContainer 
+{
+	margin: 8px 0 0 4px;
+	height: 100%;
+}
+
+.FormWindow_CollapsePanelContent
+{
+	width:766px;
+	border: solid 1px #ccc;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.FormWindow_CollapsePanelContent_label
+{
+	padding-left:4px;
+	height:21px;	
+}
+
+.FormWindow_CollapsePanel {
+	background-color:white;
+	overflow:hidden;
+}
+
+.FormWindow_CollapsePanelHeader {
+	width:770px;
+	height:21px;
+	background-image: url(../images/CollapsePanel/Header768.png);
+	background-repeat: no-repeat;
+	margin: -1px 0 0 -2px;
+}
+
+.AquaStyle .ajax__combobox_inputcontainer .ajax__combobox_textboxcontainer input
+{
+    margin: 0;
+    background-image: url(../images/CollapsePanel/aqua-bg.gif);
+    background-position: top left;
+    border: 0px none;
+    padding: 2px 0px 0px 8px;
+    font-size: 11px;
+    height: 17px;
+    width: 150px;
+}
+.AquaStyle .ajax__combobox_inputcontainer .ajax__combobox_buttoncontainer button
+{
+    background-image: url(../images/CollapsePanel/aqua-arrow.gif);
+    background-position: top left;
+    border: 0px none;
+    height: 19px;
+    width: 19px;
+}
+.AquaStyle .ajax__combobox_itemlist
+{
+    border-color: #000000;
+    background-color: #FFFFFF;
+}

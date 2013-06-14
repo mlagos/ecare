@@ -1,0 +1,69 @@
+﻿#home_content
+{
+	position: absolute;
+	/*nos posicionamos en el centro del navegador*/
+	top:50%;
+	left:50%;
+	/*determinamos una anchura*/
+	width:800px;
+	/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+	margin-left:-400px;
+	/*determinamos una altura*/
+	height:600px;
+	/*indicamos que el margen superior, es la mitad de la altura*/
+	margin-top:-300px;
+	padding:5px;
+	/*Imagen de fondo*/
+	background-image: url('images/login_form.jpg');
+}
+
+.button {
+	    font-family: Verdana, Arial, Helvetica, sans-serif;
+	    /*color: #FFFFFF;*/
+	    font-size: 10px;
+	    font-weight:bold;
+	    /*border: 1px solid #00344A;
+	    height: 17px;
+	    background-repeat: repeat;
+	    background-image: url(images/button_background.gif);
+	    cursor: hand;
+	    background-color: #DADADA;*/
+    }
+
+/*
+#ic_title
+{
+	position: relative;
+	left: 20px;
+	top: 140px;
+	line-height: 0px;
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #C3C4C6;
+	height: 170px;
+	background-image: url('images/login_logo.jpg');
+	background-repeat:no-repeat;
+}
+#ic_title a
+{
+	text-decoration: none;
+	font-size: 20pt;
+	font-weight:bold;
+	color: #C3C4C6;
+}
+
+#ic_title a:hover
+{
+	color: #8B8B8B;
+}
+*/
+#hmenu_image
+{
+	position: relative;
+	left: 0px;
+	top: 12px;
+	background-image: url('images/logotab.png');
+	background-repeat:no-repeat;
+	width: 105px;
+	height: 32px;
+}

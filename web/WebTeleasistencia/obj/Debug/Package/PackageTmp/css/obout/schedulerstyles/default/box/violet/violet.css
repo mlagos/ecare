@@ -1,0 +1,181 @@
+﻿.violetBoxTable
+{
+
+}
+.violetText
+{
+    color:#5229A3;
+}
+.violetBoxTopLeft
+{
+	padding:0px;
+	width:3px;
+	height:12px;
+	background-image:url(TopLeft.gif);
+
+}
+.violetBoxHeader
+{
+	height:12px;
+	padding:0px;
+	background-color:#5229A3;
+}
+.violetBoxTitle
+{
+	font-family:Verdana;
+	font-size:7pt;
+	font-weight:bold;
+	color:White;
+	cursor:default;	
+}
+.violetBoxTopRight
+{
+	padding:0px;
+	width:3px;
+	height:12px;
+	background-image:url(TopRight.gif);
+	
+}
+.violetBoxMiddleLeft
+{
+	padding:0px;
+	width:3px;
+	background-image:url(MiddleLeft.gif);
+	background-repeat:repeat;	
+}
+.violetBoxMiddleCenter
+{
+	background-color:#8C66D9;
+	padding:0px;	
+}
+
+.violetBoxContent
+{
+	background-color:#8C66D9;
+	padding:0px;	
+	width:100px;
+	height:50px;
+	font-family:Verdana;
+	font-size:8pt;
+	color:White;
+	overflow:hidden;
+}
+
+.violetBoxMiddleRight
+{
+	padding:0px;
+	width:3px;
+	background-image:url(MiddleRight.gif);
+	background-repeat:repeat;
+}
+
+.violetBoxHandleContainer
+{
+	padding:0px;
+	height:5px;
+	background-color:#8C66D9;
+	text-align:center;
+}
+.violetBoxHandle
+{
+	width:11px;
+	height:3px;
+	font-size:1px;		
+	background-image:url(Handle.gif);
+	cursor:s-resize;
+}
+.violetBoxHandleInvi
+{
+	width:11px;
+	height:3px;
+	font-size:1px;		
+	background-image:url(Handle.gif);
+	cursor:s-resize;
+	display:none;
+}
+
+
+.violetBoxBottomLeft
+{
+	padding:0px;
+	width:3px;
+	height:3px;
+	background-image:url(BottomLeft.gif);	
+}
+.violetBoxBottomCenter
+{
+	padding:0px;
+	height:3px;
+	background-image:url(BottomCenter.gif);
+	background-repeat:repeat;	
+}
+.violetBoxBottomRight
+{
+	padding:0px;
+	width:3px;
+	height:3px;
+	background-image:url(BottomRight.gif);
+}
+.violetSmallBoxTable
+{
+	position:absolute;
+	cursor:pointer;
+}
+.violetSmallBoxTableBlur
+{
+	position:absolute;
+	cursor:pointer;
+	
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;	
+}
+
+.violetSmallBoxLeft
+{
+	padding:0px;
+	width:2px;
+	height:16px;
+	background-image:url(SmallBoxLeft.gif);	
+}
+.violetSmallBoxCenter
+{
+	background-color:#8C66D9;
+	padding:0px;
+}
+.violetSmallBoxRight
+{
+	padding:0px;
+	width:2px;
+	height:16px;
+	background-image:url(SmallBoxRight.gif);	
+}
+.violetSmallBoxContent
+{
+	background-color:#8C66D9;
+	padding:0px;
+	font-family:Verdana;
+	font-size:8pt;
+	color:White;
+	overflow:hidden;
+	cursor:pointer;	
+}
+.violetSmallBoxArrowLeft
+{
+	width:4px;
+	height:7px;
+	background-image:url(SmallBoxArrowLeft.gif);
+}
+
+.violetSmallBoxArrowRight
+{
+	width:4px;
+	height:7px;
+	background-image:url(SmallBoxArrowRight.gif);	
+}
+.violetSmallBoxExpand
+{
+	width:6px;
+	padding:0px;
+	background-color:#8C66D9;
+}

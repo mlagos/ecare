@@ -1,0 +1,4 @@
+C:\sources\nextgal\ecare\eCare\ExternalAssemblies\bin\Debug\ExternalAssemblies.dll
+C:\sources\nextgal\ecare\eCare\ExternalAssemblies\bin\Debug\ExternalAssemblies.pdb
+C:\sources\nextgal\ecare\eCare\ExternalAssemblies\obj\Debug\ExternalAssemblies.dll
+C:\sources\nextgal\ecare\eCare\ExternalAssemblies\obj\Debug\ExternalAssemblies.pdb

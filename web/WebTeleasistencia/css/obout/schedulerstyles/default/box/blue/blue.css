@@ -1,0 +1,181 @@
+﻿.blueBoxTable
+{
+
+}
+.blueText
+{
+    color:blue;
+}
+.blueBoxTopLeft
+{
+	padding:0px;
+	width:3px;
+	height:12px;
+	background-image:url(TopLeft.gif);
+
+}
+.blueBoxHeader
+{
+	height:12px;
+	padding:0px;
+	background-color:#2951A5;
+}
+.blueBoxTitle
+{
+	font-family:Verdana;
+	font-size:7pt;
+	font-weight:bold;
+	color:White;
+	cursor:default;	
+}
+.blueBoxTopRight
+{
+	padding:0px;
+	width:3px;
+	height:12px;
+	background-image:url(TopRight.gif);
+	
+}
+.blueBoxMiddleLeft
+{
+	padding:0px;
+	width:3px;
+	background-image:url(MiddleLeft.gif);
+	background-repeat:repeat;	
+}
+.blueBoxMiddleCenter
+{
+	background-color:#638EDE;
+	padding:0px;	
+}
+
+.blueBoxContent
+{
+	background-color:#638EDE;
+	padding:0px;	
+	width:100px;
+	height:50px;
+	font-family:Verdana;
+	font-size:8pt;
+	color:White;
+	overflow:hidden;
+}
+
+.blueBoxMiddleRight
+{
+	padding:0px;
+	width:3px;
+	background-image:url(MiddleRight.gif);
+	background-repeat:repeat;
+}
+
+.blueBoxHandleContainer
+{
+	padding:0px;
+	height:5px;
+	background-color:#638EDE;
+	text-align:center;
+}
+.blueBoxHandle
+{
+	width:11px;
+	height:3px;
+	font-size:1px;		
+	background-image:url(Handle.gif);
+	cursor:s-resize;
+}
+.blueBoxHandleInvi
+{
+	width:11px;
+	height:3px;
+	font-size:1px;	
+	background-image:url(Handle.gif);
+	cursor:s-resize;
+	display:none;
+}
+
+
+.blueBoxBottomLeft
+{
+	padding:0px;
+	width:3px;
+	height:3px;
+	background-image:url(BottomLeft.gif);
+}
+.blueBoxBottomCenter
+{
+	padding:0px;
+	height:3px;
+	background-image:url(BottomCenter.gif);
+	background-repeat:repeat;	
+}
+.blueBoxBottomRight
+{
+	padding:0px;
+	width:3px;
+	height:3px;
+	background-image:url(BottomRight.gif);
+}
+.blueSmallBoxTable
+{
+	position:absolute;
+	cursor:pointer;
+}
+.blueSmallBoxTableBlur
+{
+	position:absolute;
+	cursor:pointer;
+	
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;	
+}
+
+.blueSmallBoxLeft
+{
+	padding:0px;
+	width:2px;
+	height:16px;
+	background-image:url(SmallBoxLeft.gif);	
+}
+.blueSmallBoxCenter
+{
+	background-color:#638EDE;
+	padding:0px;
+}
+.blueSmallBoxRight
+{
+	padding:0px;
+	width:2px;
+	height:16px;
+	background-image:url(SmallBoxRight.gif);	
+}
+.blueSmallBoxContent
+{
+	background-color:#638EDE;
+	padding:0px;
+	font-family:Verdana;
+	font-size:8pt;
+	color:White;
+	overflow:hidden;
+	cursor:pointer;	
+}
+.blueSmallBoxArrowLeft
+{
+	width:4px;
+	height:7px;
+	background-image:url(SmallBoxArrowLeft.gif);
+}
+
+.blueSmallBoxArrowRight
+{
+	width:4px;
+	height:7px;
+	background-image:url(SmallBoxArrowRight.gif);	
+}
+.blueSmallBoxExpand
+{
+	width:6px;
+	padding:0px;
+	background-color:#638EDE;
+}

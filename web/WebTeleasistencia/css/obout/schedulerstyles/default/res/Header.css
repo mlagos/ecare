@@ -1,0 +1,90 @@
+﻿body
+{
+	margin:0px;
+	background-color:#C6DBFF;
+}
+.DateHeaderTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0px;	
+}
+.AllDayEventTable
+{
+	width:100%;
+	border-top:solid 1px #A5BADE;
+	border-left:solid 1px #A5BADE;
+	border-right:solid 1px white;	
+	border-bottom:solid 1px white;
+	background-color:#EEEEEE;
+}
+.AllDayEventTd
+{
+	border-left:solid 1px #DDDDDD;
+	background-color:#EEEEEE;
+}
+.wall_AllDayEventTd
+{
+	 width:1px;
+	 border-left:solid 1px #DDDDDD;	
+}
+.dummyDiv_AllDayEvent
+{
+	width:1px;
+	height:1px;
+	background-color:#EEEEEE;
+}
+.DateHeaderTd
+{
+	border-left:solid 1px #C6DBFF;
+	background-color:#C6DBFF;
+}
+.wall_DateHeaderTd
+{
+	 width:1px;
+	 border-left:solid 1px #C6DBFF;
+	 border-color:#C6DBFF;
+}
+.dummyDiv_DateHeader
+{
+	width:1px;
+	height:17px;
+	background-color:#C6DBFF;
+}
+.DateLink
+{
+	font-family:Arial;
+	font-size:8pt;
+}
+.DateLinkToday
+{
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+}
+
+.MonthHeaderTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0px;
+}
+
+.MonthHeaderTd
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:Blue;
+	height:18px;
+}
+.grayCover
+{
+	display:none;
+	position:absolute;
+	background-color:Gray;
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;	
+}
+
+

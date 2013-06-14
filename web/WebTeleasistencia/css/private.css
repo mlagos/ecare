@@ -1,0 +1,264 @@
+﻿/* COMMON */
+body
+{
+	margin:0px; 
+	padding:0px; 
+	/*background:url(../images/privatebg.gif) 0 0 repeat-x #FFFFFF; */
+	/*color:#6B6854; */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:10pt;
+}
+div, p, ul, h1, h2, h3, h4, img, form, label
+{
+	padding:0px; 
+	margin:0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:10pt;
+}
+ul{list-style-type:none;}
+
+#Logo
+{
+	margin: 5px 10px 0px 0px;
+	float:right;
+}
+
+#PageTitle 
+{
+	visibility:hidden;
+	margin: -27px 0px 0px 3px;
+	color:#E6E6E6;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:normal;
+}
+
+#MainMenu 
+{
+	margin: 10px 0px 0px 0px;
+	color:#FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+}
+
+#BodyContent
+{
+	width:100%;
+	height:100%;
+	margin:0;
+}
+
+/*----- GridView ------*/
+#grid .dataGrid {vertical-align:middle; text-align:center; width:100%; border-color:#DDDDDD; border-style:solid; border-width:1px; font-size:0.9em; color:Black; background-color:White; border-color:#EFE6F7;}
+#grid .gridRowStyle {Background-color:White;}
+#grid .gridPagerStyle table{margin-left:40%}
+#grid .gridHeaderStyle {Background-color:#DDDDDD; font-weight:bold; color:Black;}
+#grid .gridPagerStyle {Background-color:#DDDDDD; color:Black; text-align:center;}
+#grid .gridAlternatingStyle {Background-color:White;}
+#grid .gridSelectedRowStyle{Background-color:White; font-weight:bold; color:White;}
+#grid .gridFooterStyle{Background-color:#CCCC99; text-align:center;}
+
+.gridFooter 
+{
+	border:0;
+	width:100%;
+    border-style: none;
+    background: #D5D2BC;
+    text-align: right;
+    font-size:11px;
+}
+
+.footercito
+{
+	border:0;
+	width:99%;
+	border-style:none;
+    background: #D5D2BC;
+	text-align:left;
+	font-size:11px;
+	margin: 0 2px 0 5px;
+}
+
+/*----- FieldSet -----*/
+#gridfieldSet {border:1px solid #808080; font-weight:normal; padding-top:20px; width:80%;clear:both; position:relative; left:20%;}
+#gridfieldSet #legend{color:Black;}
+/*
+#updatefieldSet {border:1px solid #808080; font-weight:normal; margin: 20px 20px 20px 20px; width:96%; clear:both; position:relative; float:left;}
+#updatefieldSet #legend{color:Black;}
+*/
+#search {padding:10px 0 10px 10px;margin-bottom:10px;float:left;}
+#buttonSearch{padding:10px 0 10px 10px;margin-bottom:10px;float:left;} 
+#profile {padding:10px 0 10px 10px; margin-bottom:10px;}
+#profile .listbox{font-size:9pt;height:100px; background-color:White;}
+#profile #field{margin:0 0 0 0;float:left;CLEAR:both;}
+#profile #field .tab{margin:0 30px 0 0;float:left;}
+/*#profile #field .tab .button{font-size:8pt; background-color:#F5F5F5; border-color:White;float:left;}*/
+
+#buttonsGrid {float:right;margin-top:10px;position:relative;}
+#updatebuttons {float:right;margin-top:10px;position:relative;}
+/*#updatebuttons .button{font-size:8pt; background-color:#F5F5F5; border-color:White;}*/
+
+.buttonRed {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 10px;
+	font-weight:bold;
+	border: 1px solid #660000;
+	height: 17px;
+	background-repeat: repeat;
+	background-image: url(../images/buttonRed_background.gif);
+	cursor: hand;
+	background-color: #bb8888;
+}
+
+.button {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 10px;
+	font-weight:bold;
+	border: 1px solid #00344A;
+	height: 17px;
+	background-repeat: repeat;
+	background-image: url(../images/button_background.gif);
+	cursor: hand;
+	background-color: #DADADA;
+}
+
+.buttonGreen {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 10px;
+	font-weight:bold;
+	border: 1px solid #1A5000;
+	height: 17px;
+	background-repeat: repeat;
+	background-image: url('../images/buttonGreen_background.gif');
+	cursor: hand;
+	background-color: #B3D086;
+}
+
+.textbox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #E5E5DD;
+	font-style:normal;
+	color: #00344A;
+	font-size: 10px;
+	border: 1px solid #999999;
+	margin-left: 0px;
+}
+
+.dropDownList 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #E5E5DD;
+	font-style:normal;
+	color: #00344A;
+	font-size: 10px;
+	border: 1px solid #999999;
+	margin-left: 0px;
+}
+
+.listBox
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #E5E5DD;
+	font-style:normal;
+	color: #00344A;
+	font-size: 10px;
+	border: 1px solid #999999;
+	margin-left: 0px;
+}
+
+.textoSimple, label
+{
+	FONT-SIZE: 8pt;
+}
+
+.label 
+{
+    color: #00344A;
+}
+
+.modalPopup {
+ background-color:#808080;
+ padding:3px;
+}
+
+.modalBackground {
+	background-color:#808080;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+#map{margin:4px 0 0 0; width:100%; height:100%;}
+
+.mapFooter
+{
+	width:100%;
+	height:100%; 
+	border:0;
+	border-style: none;
+    background: #4A4A4A;
+    text-align: right;
+    font-size:11px;	
+    color:#FFFFFF;
+}
+
+.window-font {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #00344A;
+	text-decoration: none;
+	text-align: left;
+}
+
+#window-content
+{
+	
+	padding: 10px;
+	display:block;
+}
+
+#window-buttons
+{
+	display: block;
+	text-align: right;
+	margin: 10px;
+}
+
+#BodyContent
+{
+	/*background:url(../images/private_background.gif) 0 0 repeat-x #D0D0D0;
+	/**
+	[if lte IE 6]
+	height: expression((ignorar = document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight) - 80 + 'px');
+	[endif]
+    **/
+}
+
+#SiteMapPath
+{
+	padding: 50px 5px 10px 5px;
+}
+.PanelSiteMapPath
+{
+	background-color: #eee;
+	height: 15px;
+	vertical-align:middle;
+	font-weight:bold;
+	padding-left: 5px;	
+}
+
+.hyperlink
+{
+	font-size: 12px;
+	color: Gray;
+}
+
+.divTabs
+{
+	margin: 20px 5px 0 5px;
+	width: auto;	
+}

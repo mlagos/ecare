@@ -1,0 +1,181 @@
+﻿.greenBoxTable
+{
+
+}
+.greenText
+{
+    color:green;
+}
+.greenBoxTopLeft
+{
+	padding:0px;
+	width:3px;
+	height:12px;
+	background-image:url(TopLeft.gif);
+
+}
+.greenBoxHeader
+{
+	height:12px;
+	padding:0px;
+	background-color:#528800;
+}
+.greenBoxTitle
+{
+	font-family:Verdana;
+	font-size:7pt;
+	font-weight:bold;
+	color:White;
+	cursor:default;	
+}
+.greenBoxTopRight
+{
+	padding:0px;
+	width:3px;
+	height:12px;
+	background-image:url(TopRight.gif);
+	
+}
+.greenBoxMiddleLeft
+{
+	padding:0px;
+	width:3px;
+	background-image:url(MiddleLeft.gif);
+	background-repeat:repeat;	
+}
+.greenBoxMiddleCenter
+{
+	background-color:#8CBF40;
+	padding:0px;	
+}
+
+.greenBoxContent
+{
+	background-color:#8CBF40;
+	padding:0px;	
+	width:100px;
+	height:50px;
+	font-family:Verdana;
+	font-size:8pt;
+	color:White;
+	overflow:hidden;
+}
+
+.greenBoxMiddleRight
+{
+	padding:0px;
+	width:3px;
+	background-image:url(MiddleRight.gif);
+	background-repeat:repeat;
+}
+
+.greenBoxHandleContainer
+{
+	padding:0px;
+	height:5px;
+	background-color:#8CBF40;
+	text-align:center;
+}
+.greenBoxHandle
+{
+	width:11px;
+	height:3px;
+	font-size:1px;		
+	background-image:url(Handle.gif);
+	cursor:s-resize;
+}
+.greenBoxHandleInvi
+{
+	width:11px;
+	height:3px;
+	font-size:1px;		
+	background-image:url(Handle.gif);
+	cursor:s-resize;
+	display:none;
+}
+
+
+.greenBoxBottomLeft
+{
+	padding:0px;
+	width:3px;
+	height:3px;
+	background-image:url(BottomLeft.gif);	
+}
+.greenBoxBottomCenter
+{
+	padding:0px;
+	height:3px;
+	background-image:url(BottomCenter.gif);
+	background-repeat:repeat;	
+}
+.greenBoxBottomRight
+{
+	padding:0px;
+	width:3px;
+	height:3px;
+	background-image:url(BottomRight.gif);
+}
+.greenSmallBoxTable
+{
+	position:absolute;
+	cursor:pointer;
+}
+.greenSmallBoxTableBlur
+{
+	position:absolute;
+	cursor:pointer;
+	
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;	
+}
+
+.greenSmallBoxLeft
+{
+	padding:0px;
+	width:2px;
+	height:16px;
+	background-image:url(SmallBoxLeft.gif);	
+}
+.greenSmallBoxCenter
+{
+	background-color:#638EDE;
+	padding:0px;
+}
+.greenSmallBoxRight
+{
+	padding:0px;
+	width:2px;
+	height:16px;
+	background-image:url(SmallBoxRight.gif);	
+}
+.greenSmallBoxContent
+{
+	background-color:#8CBF40;
+	padding:0px;
+	font-family:Verdana;
+	font-size:8pt;
+	color:White;
+	overflow:hidden;
+	cursor:pointer;	
+}
+.greenSmallBoxArrowLeft
+{
+	width:4px;
+	height:7px;
+	background-image:url(SmallBoxArrowLeft.gif);
+}
+
+.greenSmallBoxArrowRight
+{
+	width:4px;
+	height:7px;
+	background-image:url(SmallBoxArrowRight.gif);	
+}
+.greenSmallBoxExpand
+{
+	width:6px;
+	padding:0px;
+	background-color:#8CBF40;
+}

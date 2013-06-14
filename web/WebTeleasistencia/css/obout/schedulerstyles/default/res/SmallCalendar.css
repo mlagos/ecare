@@ -1,0 +1,68 @@
+﻿body 
+{
+	margin:0px;	
+	background-color:#E7F3E7;
+}
+td
+{
+	font-family:Verdana;
+	font-size:8pt;
+}
+.Separator
+{
+	height:5px;
+}
+.tableMonth
+{
+	background-color:White;
+	border:solid 1px #A5BADE;
+}
+a
+{
+	text-decoration:none;
+}
+
+.btnPrev
+{
+	font-weight:bold;
+}
+.btnMonth
+{
+	font-weight:bold;
+}
+.btnNext
+{
+	font-weight:bold;
+}
+
+.InMonth
+{
+	color:#222222;
+}
+.OffMonth
+{
+	color:#999999;
+}
+.Weekend
+{
+	background-color:#EEEEEE;
+	
+}
+.Today
+{
+	border-top:solid 1px #526573;
+	border-left:solid 1px #526573;
+	border-right:solid 1px #ADBACE;
+	border-bottom:solid 1px #ADBACE;
+	background-color:#9CAABD;
+	color:White;
+}
+.divSelectedCover
+{
+	position:absolute;
+	background-color:#9CBADE;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	opacity:0.5;
+	cursor:pointer;	
+}

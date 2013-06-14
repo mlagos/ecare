@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="Nextgal.ECare.WebTeleasistencia.Templates.Menu" %>
+
+<%@ Register src="../UserControls/HeaderMenu.ascx" tagname="HeaderMenu" tagprefix="uc1" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../css/private.css" rel="stylesheet" type="text/css" />
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="../css/HeaderMenu.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.2)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.2)" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <script src="/js/slide.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function pulsar(e) {
+            tecla = (document.all) ? e.keyCode : e.which;
+            if (tecla == 13) return false;
+        }
+    </script>
+</head>
+
+<body onkeypress="return pulsar(event)">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" EnablePartialRendering="true" EnableScriptGlobalization="True" EnableScriptLocalization="true"/>
+          
+            
+            <div id="PageTitle">
+                <asp:ContentPlaceHolder ID="PageTitleContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+               
+            <div id="MainMenu">
+                <uc1:HeaderMenu ID="HeaderMenu1" runat="server" />
+            </div>
+            
+            <%--NO PONER DIV, SINO NO FUNCIONA EL SPLITTER CORRECTAMENTE--%>
+		    <%-- <div id="BodyContent">--%>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>        
+            <%--</div>--%>
+            
+            
+       
+    </form>
+</body>
+</html>

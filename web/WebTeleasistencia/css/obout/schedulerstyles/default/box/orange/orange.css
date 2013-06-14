@@ -1,0 +1,181 @@
+﻿.orangeBoxTable
+{
+
+}
+.orangeText
+{
+    color:#E6804D;
+}
+.orangeBoxTopLeft
+{
+	padding:0px;
+	width:3px;
+	height:12px;
+	background-image:url(TopLeft.gif);
+
+}
+.orangeBoxHeader
+{
+	height:12px;
+	padding:0px;
+	background-color:#B1440E;
+}
+.orangeBoxTitle
+{
+	font-family:Verdana;
+	font-size:7pt;
+	font-weight:bold;
+	color:White;
+	cursor:default;	
+}
+.orangeBoxTopRight
+{
+	padding:0px;
+	width:3px;
+	height:12px;
+	background-image:url(TopRight.gif);
+	
+}
+.orangeBoxMiddleLeft
+{
+	padding:0px;
+	width:3px;
+	background-image:url(MiddleLeft.gif);
+	background-repeat:repeat;	
+}
+.orangeBoxMiddleCenter
+{
+	background-color:#638EDE;
+	padding:0px;	
+}
+
+.orangeBoxContent
+{
+	background-color:#E6804D;
+	padding:0px;	
+	width:100px;
+	height:50px;
+	font-family:Verdana;
+	font-size:8pt;
+	color:White;
+	overflow:hidden;
+}
+
+.orangeBoxMiddleRight
+{
+	padding:0px;
+	width:3px;
+	background-image:url(MiddleRight.gif);
+	background-repeat:repeat;
+}
+
+.orangeBoxHandleContainer
+{
+	padding:0px;
+	height:5px;
+	background-color:#E6804D;
+	text-align:center;
+}
+.orangeBoxHandle
+{
+	width:11px;
+	height:3px;
+	font-size:1px;		
+	background-image:url(Handle.gif);
+	cursor:s-resize;
+}
+.orangeBoxHandleInvi
+{
+	width:11px;
+	height:3px;
+	font-size:1px;		
+	background-image:url(Handle.gif);
+	cursor:s-resize;
+	display:none;
+}
+
+
+.orangeBoxBottomLeft
+{
+	padding:0px;
+	width:3px;
+	height:3px;
+	background-image:url(BottomLeft.gif);	
+}
+.orangeBoxBottomCenter
+{
+	padding:0px;
+	height:3px;
+	background-image:url(BottomCenter.gif);
+	background-repeat:repeat;	
+}
+.orangeBoxBottomRight
+{
+	padding:0px;
+	width:3px;
+	height:3px;
+	background-image:url(BottomRight.gif);
+}
+.orangeSmallBoxTable
+{
+	position:absolute;
+	cursor:pointer;
+}
+.orangeSmallBoxTableBlur
+{
+	position:absolute;
+	cursor:pointer;
+	
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;	
+}
+
+.orangeSmallBoxLeft
+{
+	padding:0px;
+	width:2px;
+	height:16px;
+	background-image:url(SmallBoxLeft.gif);	
+}
+.orangeSmallBoxCenter
+{
+	background-color:#638EDE;
+	padding:0px;
+}
+.orangeSmallBoxRight
+{
+	padding:0px;
+	width:2px;
+	height:16px;
+	background-image:url(SmallBoxRight.gif);	
+}
+.orangeSmallBoxContent
+{
+	background-color:#E6804D;
+	padding:0px;
+	font-family:Verdana;
+	font-size:8pt;
+	color:White;
+	overflow:hidden;
+	cursor:pointer;	
+}
+.orangeSmallBoxArrowLeft
+{
+	width:4px;
+	height:7px;
+	background-image:url(SmallBoxArrowLeft.gif);
+}
+
+.orangeSmallBoxArrowRight
+{
+	width:4px;
+	height:7px;
+	background-image:url(SmallBoxArrowRight.gif);	
+}
+.orangeSmallBoxExpand
+{
+	width:6px;
+	padding:0px;
+	background-color:#E6804D;
+}

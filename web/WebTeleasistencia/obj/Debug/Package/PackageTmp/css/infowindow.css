@@ -1,0 +1,116 @@
+﻿body 
+{
+	margin:0px; 
+	padding:0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:8pt;	
+}
+
+.letra-titulo
+ {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	/*color:#6261D8;*/
+	text-decoration: none;
+	text-align:left;
+	margin-bottom:8px;
+}
+
+.letra-azul-10 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #00344A;
+	text-decoration: none;
+	margin:10px 10px 4px 10px;
+}
+
+.button 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 8pt;
+	/*font-weight:bold;*/
+	border: 1px solid #00344A;
+	height: 17px;
+	background-repeat: repeat;
+	background-image: url(../images/button_background.gif);
+	cursor: hand;
+	background-color: #DADADA;
+}
+
+.button_blue
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 8pt;
+    /*font-weight: bold;*/
+    border: 1px solid #00344A;
+    height: 17px;
+    background-repeat: repeat;
+    background-image: url(../images/button_background.gif);
+    cursor: hand;
+}
+
+.buttonRed 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 8pt;
+	/*font-weight:bold;*/
+	border: 1px solid #660000;
+	height: 17px;
+	background-repeat: repeat;
+	background-image: url(../images/buttonRed_background.gif);
+	cursor: hand;
+	background-color: #bb8888;
+}
+
+.buttonGreen
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 8pt;
+	/*font-weight:bold;*/
+	border: 1px solid #1A5000;
+	height: 17px;
+	background-repeat: repeat;
+	background-image: url('../images/buttonGreen_background.gif');
+	cursor: hand;
+	background-color: #B3D086;
+}
+
+.textbox 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #E5E5DD;
+	font-style:normal;
+	color: #00344A;
+	font-size: 8pt;
+	border: 1px solid #999999;
+	margin-left: 0px;
+}
+
+.dropDownList 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #E5E5DD;
+	font-style:normal;
+	color: #00344A;
+	font-size: 8pt;
+	border: 1px solid #999999;
+	margin-left: 0px;
+}
+
+.listBox
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #E5E5DD;
+	font-style:normal;
+	color: #00344A;
+	font-size: 8pt;
+	border: 1px solid #999999;
+	margin-left: 0px;
+}

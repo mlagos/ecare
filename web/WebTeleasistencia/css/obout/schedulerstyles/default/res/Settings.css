@@ -1,0 +1,143 @@
+﻿body 
+{
+	margin:0px;
+	background-color:white;
+	font-family:Arial;
+	font-size:10pt;
+}
+.btnBack
+{
+	height:20px;
+	font-family:Arial;
+	font-size:9pt;
+}
+.btnSave
+{
+	height:20px;
+	font-family:Arial;
+	font-size:9pt;
+}
+.btnCancel
+{
+	height:20px;
+	font-family:Arial;
+	font-size:9pt;
+}
+.tdBackground
+{
+	background-color:#FFD363;
+}
+.tdInnerBackground
+{
+	background-color:#FFF7D6;
+}
+.tdOption
+{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:5px;
+	font-size:10pt;
+}
+.ddLanguage
+{
+	width:150px;
+}
+.ddDateFormat
+{
+}
+.MenuSelected
+{
+    width:80px;
+    height:23px;
+    font-family:Arial;
+    font-size:10pt;
+    font-weight:bold;
+    background-color:#FFF7D6;
+    vertical-align:middle;
+    text-align:center;
+}
+.MenuUnselected
+{
+    width:80px;
+    height:23px;
+    font-family:Arial;
+    font-size:10pt;
+    font-weight:bold;
+    text-decoration:underline;
+    color:#4729BB;
+    background-color:#FFD363;
+    vertical-align:middle;
+    text-align:center;
+    cursor:pointer;
+}
+.linkRenameDelete
+{
+    font-family:Arial;
+    font-size:10pt;
+    text-decoration:underline;
+    color:Blue;
+    cursor:pointer;    
+}
+.divCatName
+{
+    padding-top:1px;
+    height:17px;
+    vertical-align:middle;
+    font-family:Arial;
+    font-size:10pt;
+    font-style:italic;
+    font-weight:bold;
+    color:Green;    
+}
+.divCatNameOver
+{
+    padding-top:1px;
+    width:50%;
+    height:17px;
+    vertical-align:middle;
+    background-color:White;
+    border-top:solid 1px gray;
+    border-left:solid 1px gray;
+    border-bottom:solid 1px white;
+    border-right:solid 1px white;
+    
+    font-family:Arial;
+    font-size:10pt;
+    font-style:italic;
+    font-weight:bold;
+    color:Green;    
+}
+
+.txtCatName
+{
+    width:50%;
+    border-width:1px;
+    font-family:Arial;
+    font-size:10pt;
+    font-style:italic;
+    font-weight:bold;
+    color:Green;
+}
+
+.tdTheme
+{
+    width:100px;
+}
+
+.tdHideShow
+{
+    width:100px;
+    text-align:center;
+}
+.tdDelete
+{
+    width:70px;
+    text-align:center;
+}
+.tdHeader
+{
+    font-family:Arial;
+    font-size:10pt;
+    padding-left:5px;
+    font-variant:small-caps;
+}

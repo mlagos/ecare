@@ -1,0 +1,5 @@
+C:\sources\nextgal\ecare\eCare\Common\bin\Debug\Nextgal.ECare.Common.dll
+C:\sources\nextgal\ecare\eCare\Common\bin\Debug\Nextgal.ECare.Common.pdb
+C:\sources\nextgal\ecare\eCare\Common\bin\Debug\GMaps.dll
+C:\sources\nextgal\ecare\eCare\Common\obj\Debug\Nextgal.ECare.Common.dll
+C:\sources\nextgal\ecare\eCare\Common\obj\Debug\Nextgal.ECare.Common.pdb

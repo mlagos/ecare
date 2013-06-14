@@ -1,0 +1,101 @@
+﻿
+
+/*Tab superior */
+#toppanel { width:970px; }
+#panel { width: 100%; height: 131px; color: #ddd; background: #272727; overflow: hidden; position: relative; z-index: 3; font-size: 0.85em; display: none;}
+
+#panel .content { width: 960px; margin: 0 auto; padding-top: 15px; text-align: left; font-size: 0.85em;}
+#panel h1 { font-size: 1.6em; padding: 0; margin: 0; color: white; display:block}
+
+/* Botones */
+.TabBoton { background:url(../Images/hmenu/hmenu_bg_top.png) no-repeat top left #999; border:0px solid #004b58;
+color:#000 !important; float:right; text-decoration:none; width:71px; height:25px; margin:5px 0 0 0; cursor:pointer; padding-bottom:4px}
+
+/***** clearfix *****/
+.clear {clear: both;height: 0;line-height: 0;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.clearfix {height: 1%;}
+.clearfix {display: block;}
+
+/* Panel Tab/button */
+.image_tab {background: url(../Images/hmenu/hmenu_background.png) repeat-x 0 0;height: 7px;width:100%;position: relative; top: 0; float:left; z-index:999999}
+.tab {height: 12px; position: relative; top: 0; z-index: 99999; float:left; width:100%; text-align:center}
+.tab ul.login { display: block; position: absolute; left: 30%; float: left; height: 42px; width: auto; font-weight: bold; line-height: 42px; color: white; font-size: 80%; text-align: center; padding:0; top: -7px; }
+.tab ul.login li.left { background: url(../Images/hmenu/hmenu_left.png) no-repeat left 0; height: 42px; width: 13px; padding: 0; margin: 0; display: block; float: left;}
+.tab ul.login li.leftLogo { text-align: left; padding:0; display: block; float: left; height: 42px; background: url(../Images/hmenu/hmenu_content_Logo.png) repeat-x 0 0;}
+.tab ul.login li.leftMitad { background: url(../Images/hmenu/hmenu_left_logo.png) no-repeat left 0; height: 42px; width: 6px; padding: 0; margin: 0; display: block; float: left;}
+.tab ul.login li.leftLogo IMG { margin-top:10px}
+.tab ul.login li.right {background: url(../Images/hmenu/hmenu_right.png) no-repeat left 0; height: 50px; width: 15px; padding: 0; margin:0; display: block; float: left;}
+.tab ul.login li { text-align: left; padding:0; display: block; float: left; height: 42px; background: url(../Images/hmenu/hmenu_content.png) repeat-x 0 0;}
+.tab ul#TabsMenu { margin:0; padding:0}
+.tab ul#TabsMenu li{ background:url(../Images/hmenu/hmenu_spacer.png) no-repeat left center; cursor:pointer; color:#ddd; padding:0 7px}
+.tab ul#TabsMenu li:hover {color:#FFF}
+.tab ul#TabsMenu li.active { color:#FFF}
+.tab ul.login li a { text-decoration:none; padding:0 9px}
+.tab ul.login li.addBord { background:url(../Images/hmenu/hmenu_spacer_options.png) no-repeat left center; font-size:11px;}
+.tab ul.login li.addBord a { cursor:pointer}
+.tab a {color:#000;}
+.tab a:hover {color:#000} 
+.tab .sep {color:#414141}
+
+.profileButton { height: 20px; line-height: 20px !important; cursor: pointer; display: block; position: relative; top: 13px; margin-right:2px}
+
+#toppanel {
+    position: absolute;   /*Panel will overlap  content */
+    /*position: relative;*/   /*Panel will "push" the content down */
+    top: 0; width: 100%; z-index: 999; text-align: center; margin-left: 0px; margin-right: auto;}
+
+a img { border: none; }
+
+/* Menu dropdown options */
+.menu {	padding:0; margin:0; margin-bottom:0; list-style:none; background-repeat:no-repeat; position:relative; z-index:9999 }
+.menu li.top {display:block; float:left; position:relative;}
+.menu li a.top_link { display:block; float:left; margin-left:0px; color:#000; text-decoration:none; cursor:pointer; font-size:11px;}
+.menu li a.top_link span {float:left; text-align:center; display:block; padding:0 0 0 0;}
+.menu li a.top_link span.down {float:left; display:block; padding:0 0 0 0;}
+.menu li a.top_link:hover {color:#000;}
+.menu li a.top_link:hover span {}
+.menu li a.top_link:hover span.down {}
+.menu li:hover > a.top_link {color:#000;}
+.menu li:hover > a.top_link span { }
+.menu li:hover > a.top_link span.down { }
+.menu table {border-collapse:collapse; width:0; height:0; position:absolute; top:0; left:0;}
+
+/* Default link styling */
+/* Style the list OR link hover. Depends on which browser is used */
+.menu a:hover {visibility:visible;}
+.menu li:hover {position:relative; z-index:200;}
+
+/* keep the 'next' level invisible by placing it off screen. */
+.menu ul, 
+.menu :hover ul ul, 
+.menu :hover ul :hover ul ul,
+.menu :hover ul :hover ul :hover ul ul,
+.menu :hover ul :hover ul :hover ul :hover ul ul {position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+.menu :hover ul.sub {left:2px; top:38px; padding:0; /*border:0px solid #1E8BB5; white-space:nowrap;*/ width:auto; height:0px; font-weight:normal; }
+.menu :hover ul.sub li { height: 20px; vertical-align:top; /*height:20px; border-bottom:1px solid #bbb; display:block; position:relative; float:left; color:#000; margin-bottom:0; margin-top:0; width:162px; border-left:1px solid #bbb; border-right:1px solid #bbb; background: url(../Images/hmenu/hmenu_bg.png) repeat-x 0 0;*/}
+.menu :hover ul.sub li a {height: 20px; vertical-align:top; line-height:20px; display:block; color:#000; font-size:11px; text-decoration:none; background: url(../Images/hmenu/hmenu_bg.png) repeat-x 0 0; width:190px;}
+.menu :hover ul.sub li a.fly {}
+.menu :hover ul.sub li a:hover { color: #000; font-weight:bold; }
+.menu :hover ul.sub li a.fly:hover { color: #000; font-weight:bold; }
+.menu :hover ul li:hover > a.fly {} 
+
+.menu :hover ul :hover ul,
+.menu :hover ul :hover ul :hover ul,
+.menu :hover ul :hover ul :hover ul :hover ul,
+.menu :hover ul :hover ul :hover ul :hover ul :hover ul {left:162px; top:5px; padding:0; /* white-space:nowrap; */width:auto; z-index:300; height: 20px;}
+.menu :hover ul.sub li ul {border-top:0px solid #bbb; z-index:300;}
+/* ********************** */
+
+.userData
+{
+	font-family: Verdana;
+	color: #120A8F;
+	font-size: 9pt;
+	font-weight: normal;
+}

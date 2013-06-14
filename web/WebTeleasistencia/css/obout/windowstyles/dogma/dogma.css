@@ -1,0 +1,817 @@
+﻿/*iframe:layer under window layer*/
+.dogmaIframeLayer
+{
+	border:0px;
+	background-color:white;
+	filter:alpha(opacity=0);
+	-moz-opacity:0.0;
+	opacity:0.0;
+}
+/*div:Layer contains window*/
+.dogmaWindowLayer
+{
+	display:none;
+}
+/*Master Table contains window parts*/
+.dogmaMasterTable
+{
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+	margin:0;
+}
+/*td*/
+.dogmaHeaderContainer
+{
+	height:24px;
+	width:100%;
+	vertical-align:top;
+	padding:0px;
+}
+/*td*/
+.dogmaToolbarContainer
+{
+	height:18px;
+	width:100%;
+	vertical-align:top;
+	padding:0px;
+}
+/*td*/
+.dogmaContentContainer
+{
+	width:100%;
+	padding:0px;
+	vertical-align:top;
+}
+/*td*/
+.dogmaFooterContainer
+{
+	height:22px;
+	width:100%;
+	vertical-align:top;
+	padding:0px;
+
+}
+
+.dogmaBottomLineContainer
+{
+	height:4px;
+	width:100%;
+	vertical-align:bottom;
+	padding:0px;
+}
+/*Header-----------------------------------------------------------------------------------------------*/
+/*td*/
+.dogmaHeaderTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0;
+}
+
+/*tr*/
+.dogmaHeaderTop
+{
+	display:none;
+}
+
+/*tr*/
+.dogmaHeaderBottom
+{
+	display:none;
+}
+
+
+
+/*td*/
+.dogmaHeaderTopLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaHeaderTopCenter
+{
+	height:0px;	
+	padding:0px;
+}
+/*td*/
+.dogmaHeaderTopRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+
+}
+/*td*/
+.dogmaHeaderMiddleLeft
+{
+	padding:0px;
+	width:4px;
+	height:24px;
+	background-image:url(HeaderMiddleLeft.gif);
+}
+/*td*/
+.dogmaHeaderMiddleCenter
+{
+	padding:0px;
+	height:24px;	
+	background-image:url(HeaderMiddleCenter.gif);
+	background-repeat:repeat;
+	
+}
+/*td*/
+.dogmaHeaderMiddleRight
+{
+	padding:0px;
+	width:4px;
+	height:24px;
+	background-image:url(HeaderMiddleRight.gif);
+}
+/*td*/
+.dogmaHeaderBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaHeaderBottomCenter
+{
+	height:0px;	
+	padding:0px;
+}
+/*td*/
+.dogmaHeaderBottomRight
+{
+	height:0px;
+	width:0px;	
+	padding:0px;
+}
+/*Small table inside header*/
+.dogmaHeaderInnerTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0;	
+}
+/*td*/
+.dogmaHeaderLogoContainer
+{
+	width:1px;
+	padding:0px;
+	padding-left:5px;
+}
+/*img*/
+.dogmaHeaderLogo
+{
+	width:17px;
+	height:17px;
+}
+/*td*/
+.dogmaHeaderTitle
+{
+	padding:0px;
+	padding-left:2px;
+	cursor:default;
+
+}
+
+/*div*/
+.dogmaTitlePanel
+{
+	font-weight:bold;
+	font-family:Arial;
+	font-size:11px;
+	color:Black;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+/*div*/
+.dogmaTitlePanelDisable
+{
+	font-weight:bold;
+	font-family:Arial;
+	font-size:11px;
+	color:White;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+
+
+/*Contain built-in buttons td*/
+/*td*/
+.dogmaHeaderBuiltinButtonsContainer
+{
+	width:106px;
+	height:24px;
+	background:url(BuiltinButtonsContainer.gif);
+	padding:0px;
+}
+
+
+/*Buttons table*/
+.dogmaWindowBuiltinButtonsTable
+{
+	width:auto;
+	border-collapse:collapse;
+	margin:0;
+}
+
+
+/*Individual Button Container, it is the td cover button*/
+.dogmaButtonContainer
+{
+	padding:0px;
+	padding-right:2px;
+}
+/*Minimize Button*/
+/*img*/
+.dogmaButtonMinimizeOver
+{
+	width:16px;
+	height:16px;
+	background:url(MinimizeOver.gif);
+}
+/*img*/
+.dogmaButtonMinimizeDown
+{
+	width:16px;
+	height:16px;
+	background:url(MinimizeDown.gif);
+}
+
+
+/*img*/
+.dogmaButtonMinimizeOut
+{
+	width:16px;
+	height:16px;
+	background:url(MinimizeOut.gif);
+}
+
+
+
+
+/*Maximize Button*/
+/*img*/
+.dogmaButtonMaximizeOver
+{
+	width:16px;
+	height:16px;
+	background:url(MaximizeOver.gif);	
+}
+/*img*/
+.dogmaButtonMaximizeDown
+{
+	width:16px;
+	height:16px;
+	background:url(MaximizeDown.gif);	
+}
+/*img*/
+.dogmaButtonMaximizeOut
+{
+	width:16px;
+	height:16px;
+	background:url(MaximizeOut.gif);		
+}
+
+/*Restore Down Button*/
+/*img*/
+.dogmaButtonRestoreDownOver
+{
+	width:16px;
+	height:16px;
+	background:url(RestoreDownOver.gif);	
+}
+/*img*/
+.dogmaButtonRestoreDownDown
+{
+	width:16px;
+	height:16px;
+	background:url(RestoreDownDown.gif);	
+}
+/*img*/
+.dogmaButtonRestoreDownOut
+{
+	width:16px;
+	height:16px;
+	background:url(RestoreDownOut.gif);		
+}
+
+
+/*Close Button*/
+/*img*/
+.dogmaButtonCloseOver
+{
+	width:16px;
+	height:16px;
+	background:url(CloseOver.gif);	
+}
+/*img*/
+.dogmaButtonCloseDown
+{
+	width:16px;
+	height:16px;
+	background:url(CloseDown.gif);		
+}
+
+/*img*/
+.dogmaButtonCloseOut
+{
+	width:16px;
+	height:16px;
+	background:url(CloseOut.gif);		
+}
+
+/*Toolbar-----------------------------------------------------------------------------------------------*/
+.dogmaToolbarTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0;
+		
+}
+
+/*tr*/
+.dogmaToolbarTop
+{
+	display:none;
+}
+
+/*tr*/
+.dogmaToolbarBottom
+{
+	display:none;
+}
+
+
+/*td*/
+.dogmaToolbarTopLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaToolbarTopCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaToolbarTopRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaToolbarMiddleLeft
+{
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaToolbarMiddleCenter
+{
+	padding:0px;
+}
+/*td*/
+.dogmaToolbarMiddleRight
+{
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaToolbarBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaToolbarBottomCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaToolbarBottomRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*div*/
+.dogmaToolbarPanel
+{
+	background-color:Aqua;
+}
+
+
+/*Content-----------------------------------------------------------------------------------------------*/
+.dogmaContentTable
+{
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+	margin:0;
+	
+}
+
+/*tr*/
+.dogmaContentTop
+{
+	display:none;
+}
+
+/*tr*/
+.dogmaContentBottom
+{
+	display:none;
+}
+
+
+
+/*td*/
+.dogmaContentTopLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaContentTopCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaContentTopRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaContentMiddleLeft
+{
+	padding:0px;
+	width:4px;
+	background-image:url(ContentMiddleLeft.gif);
+	background-repeat:repeat;
+}
+/*td*/
+.dogmaContentMiddleCenter
+{
+	padding:0px;
+	vertical-align:top;
+	
+}
+/*td*/
+.dogmaContentMiddleRight
+{
+	padding:0px;
+	width:4px;
+	background-image:url(ContentMiddleRight.gif);
+	background-repeat:repeat;
+	
+}
+/*td*/
+.dogmaContentBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+	font-size:1px;
+}
+/*td*/
+.dogmaContentBottomCenter
+{
+	height:0px;
+	padding:0px;
+	font-size:1px;
+}
+/*td*/
+.dogmaContentBottomRight
+{
+	height:0%;
+	width:0px;
+	padding:0px;
+	font-size:1px;
+}
+
+/*IFRAME or DIV*/
+.dogmaContentPanel
+{
+	border:0px;
+	background-color:White;
+	overflow:hidden;
+	padding:0px;	
+}
+
+
+/*Footer-----------------------------------------------------------------------------------------------*/
+.dogmaFooterTable
+{
+	border-collapse:collapse;
+	margin:0;	
+	width:100%;
+}
+
+/*tr*/
+.dogmaFooterTop
+{
+	display:none;
+}
+
+/*tr*/
+.dogmaFooterBottom
+{
+	display:none;	
+}
+
+
+/*td*/
+.dogmaFooterTopLeft 
+{
+	padding:0px;
+}
+/*td*/
+.dogmaFooterTopCenter
+{
+	padding:0px;
+}
+/*td*/
+.dogmaFooterTopRight
+{
+	padding:0px;
+}
+/*td*/
+.dogmaFooterMiddleLeft
+{
+	width:4px;
+	padding:0px;
+	background-image:url(ContentMiddleLeft.gif);	
+}
+/*td*/
+.dogmaFooterMiddleCenter
+{
+	height:22px;
+	padding:0px;
+	background-image:url(FooterMiddleCenter.gif);	
+	background-repeat:repeat;
+	white-space:nowrap;	
+		
+}
+/*td*/
+.dogmaFooterMiddleRight
+{
+	width:16px;
+	height:22px;
+	padding:0px;
+	background-image:url(FooterMiddleRight.gif);
+
+}
+/*td*/
+.dogmaFooterBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+	background-color:#D6D3CE;
+}
+/*td*/
+.dogmaFooterBottomCenter
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.dogmaFooterBottomRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+	
+}
+/*div*/
+.dogmaFooterPanel
+{
+	cursor:default;
+	font-family:Tahoma;
+	font-size:11px;
+	padding-left:5px;
+	padding-top:1px;
+	overflow:hidden;
+	height:13px;
+	width:100%;
+	white-space:nowrap;
+}
+
+
+/*BottomLine-----------------------------------------------------------------------------------------------*/
+.dogmaBottomLineTable
+{
+	border-collapse:collapse;
+	margin:0;	
+	width:100%;
+}
+.dogmaBottomLineLeft
+{
+	width:4px;
+	height:4px;
+	padding:0px;
+	background-image:url(BottomLineLeft.gif);	
+}
+.dogmaBottomLineCenter
+{
+	height:4px;
+	padding:0px;
+	background-image:url(BottomLineCenter.gif);
+	background-repeat:repeat;
+}
+.dogmaBottomLineRight
+{
+	width:4px;
+	height:4px;
+	padding:0px;
+	background-image:url(BottomLineRight.gif);	
+}
+
+
+
+/*DragPanel-----------------------------------------------------------------------------------------------*/
+
+.dogmaDragPanel
+{
+	background-color:Gray;
+	filter:alpha(opacity=25);
+	-moz-opacity:0.25;
+	opacity:0.25;
+	z-index:999999999;	
+}
+
+/*Filter-----------------------------------------------------------------------------------------------*/
+
+.dogmaFilterIframeLayer
+{
+	border:0px;
+	filter:alpha(opacity=0);
+	-moz-opacity:0.0;
+	opacity:0.0;	
+}
+.dogmaFilterDivLayer
+{
+	background-color:gray;
+	filter:alpha(opacity=15);
+	-moz-opacity:0.15;
+	opacity:0.15;	
+}
+/*Window Resize-----------------------------------------------------------------------------------------------*/
+
+
+.dogmaResizeHandle
+{
+	position:absolute;
+	background-color:white;
+	filter:alpha(opacity=0);
+	-moz-opacity:0.0;
+	opacity:0.0;
+	font-size:1px;
+	height:4px;
+	width:4px;	
+}
+
+/*Handle cursor of mouseover*/
+.dogmaCursorResizeLeft
+{	
+	cursor:e-resize;
+}
+.dogmaCursorResizeTop
+{	
+	cursor:n-resize;
+}
+.dogmaCursorResizeRight
+{
+	cursor:w-resize;
+}
+
+.dogmaCursorResizeBottom
+{
+	cursor:s-resize;
+}
+
+.dogmaCursorResizeTopLeft
+{
+	cursor:nw-resize;	
+
+}
+
+.dogmaCursorResizeTopRight
+{
+	cursor:ne-resize;
+}
+
+.dogmaCursorResizeBottomRight
+{
+	cursor:se-resize;
+}
+
+.dogmaCursorResizeBottomLeft
+{
+	cursor:sw-resize;
+}
+/*The size of diagonal resize at each conner*/
+.dogmaResizeConnerSize
+{	
+	width:20px;
+	height:20px;
+	background-color:transparent;			
+}
+
+.dogmaResizePanel
+{
+	z-index:99999;
+	background-color:Gray;
+	filter:alpha(opacity=25);
+	-moz-opacity:0.25;
+	opacity:0.25;	
+}
+/*-BuiltinWindow------------------------------------------------*/
+
+.dogmaAlertContentTable
+{
+	width:100%;
+	height:100%;
+}
+
+.dogmaAlertLogoContainer
+{
+	padding:0px;
+	width:30px;
+	vertical-align:top;
+	padding-top:10px;
+	padding-left:15px;
+}
+.dogmaAlertMessageContainer
+{
+	padding:0px;
+	font-family:Verdana;
+	font-size:8pt;
+	vertical-align:top;
+	padding-top:15px;
+	padding-left:10px;
+}
+.dogmaAlertOKContainer
+{
+	padding:0px;
+	text-align:center;
+	vertical-align:bottom;
+	padding-bottom:10px;
+}
+.dogmawarningLogo
+{
+	padding:0px;
+	width:32px;
+	height:32px;
+	background-image:url(windows-warning.png);
+}
+.dogmainfoLogo
+{
+	padding:0px;
+	width:32px;
+	height:32px;
+	background-image:url(windows-info.png);
+}
+.dogmaerrorLogo
+{
+	padding:0px;
+	width:32px;
+	height:32px;
+	background-image:url(windows-error.png);
+}
+
+
+.dogmaAlertOKButton
+{
+	width:60px;
+}
+
+/*use to detect finsihed loading, do not change*/
+.dogmaEnd
+{
+	background-color:Transparent;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:9px;
+	width:9px;
+	font-size:1px;
+}
+

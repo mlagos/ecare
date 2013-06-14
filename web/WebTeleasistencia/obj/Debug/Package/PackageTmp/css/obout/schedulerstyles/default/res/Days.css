@@ -1,0 +1,56 @@
+﻿.timeBox
+{
+	background-color:#EEEEEE;
+	border-bottom:solid 1px #DDDDDD;
+	width:40px;
+	vertical-align:top;
+	text-align:center;
+	font-family:Arial;
+	font-size:8pt;
+	color:Black;
+}
+
+.dotBottom
+{
+	 border-bottom:dotted 1px #DDDDDD;
+	 border-left:solid 1px #DDDDDD;
+}
+.lineBottom
+{
+	 border-bottom:solid 1px #DDDDDD;
+	 border-left:solid 1px #DDDDDD;
+}
+
+.dotBottomToday
+{
+	 border-bottom:dotted 1px #DDDDDD;
+	 border-left:solid 1px #DDDDDD;
+	 background-color:#FFFFCE;
+}
+.lineBottomToday
+{
+	 border-bottom:solid 1px #DDDDDD;
+	 border-left:solid 1px #DDDDDD;
+	 background-color:#FFFFCE;	 
+}
+
+.wall_dotBottom
+{
+	 width:1px;
+	 border-left:solid 1px #DDDDDD;
+}
+.wall_lineBottom
+{
+	 width:1px;
+	 border-bottom:solid 1px #DDDDDD;
+	 border-left:solid 1px #DDDDDD;
+}
+.grayCover
+{
+	display:none;
+	position:absolute;
+	background-color:Gray;
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;	
+}
