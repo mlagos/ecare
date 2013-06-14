@@ -1,0 +1,1 @@
+--debug --aot=mtriple=armv7-darwin,full,static,asmonly,direct-icalls,soft-debug,no-direct-calls,iphone-abi,outfile=/familyecare.exe.armv7.s "/Users/mlagos/Projects/familyecare/familyecare/bin/iPhone/Debug/familyecare.exe"

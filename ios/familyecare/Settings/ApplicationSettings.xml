@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<LocationMonitor>
+		<ApplicationPurpose>family eCare</ApplicationPurpose>
+	</LocationMonitor>
+	<MotionMonitor>
+		<GyroUpdateInterval>0.1</GyroUpdateInterval>
+		<AccelerometerUpdateInterval>0.1</AccelerometerUpdateInterval>
+		<DeviceMotionUpdateInterval>0.1</DeviceMotionUpdateInterval>
+	</MotionMonitor>
+	<!-- Landscape mode
+	// http://stackoverflow.com/questions/3594199/iphone-4-camera-specifications-field-of-view-vertical-horizontal-angle -->
+	<FOV>
+		<!-- For iPhone in radians (float)2.0 * (float)Math.Atan (58.5 / 2.0 / 56.5); 
+		// For iPhone 4S in radians (float)2.0 * (float)Math.Atan (4.592 / (2 * 4.28)); -->
+		<Horizontal>0.98475913484564</Horizontal>
+		<!-- For iPhone in radians (float)2.0 *  (float)Math.Atan (21.5 / 2.0 / 56.5);
+		// For iPhone 4S in radians (float)2.0 *  (float)Math.Atan (3.450 / (2 * 4.28)); -->
+		<Vertical>0.76624413062396</Vertical>
+	</FOV>
+	<Notification>
+		<ApplicationServerUrl>
+			<Subscribe>http://familyecare.com/wsm/services</Subscribe>
+		</ApplicationServerUrl>
+	</Notification>
+</Configuration>

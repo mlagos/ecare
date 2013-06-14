@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5379E041-ABE5-4155-9983-7F661F55F108}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>familyecare</RootNamespace>
+    <AssemblyName>familyecare</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>True</MtouchProfiling>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>True</MtouchProfiling>
+    <MtouchArch>ARMv7</MtouchArch>
+    <IpaPackageName />
+    <MtouchI18n />
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer: Manuel Lagos (AWFHQGD8KA)</CodesignKey>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchI18n />
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>B92E311A-0B1E-4311-B546-00411D7FCDD5</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <BuildIpa>True</BuildIpa>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchI18n />
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchI18n />
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="Mono.Data.Sqlite" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Settings\ApplicationSettings.xml" />
+    <None Include="Settings\ApplicationSettingsGenerator.tt" />
+    <None Include="Entitlements.plist" />
+    <None Include="Web References\familyecare.com\deviceservices.disco" />
+    <None Include="Web References\familyecare.com\deviceservices.wsdl" />
+    <None Include="Web References\familyecare.com\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="RootViewController.cs" />
+    <Compile Include="RootViewController.designer.cs">
+      <DependentUpon>RootViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainViewController.cs" />
+    <Compile Include="MainViewController.designer.cs">
+      <DependentUpon>MainViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NextgalLocationManager.cs" />
+    <Compile Include="Settings\ApplicationSettingsGenerator.cs" />
+    <Compile Include="DataBase\Message.cs" />
+    <Compile Include="DataBase\Event.cs" />
+    <Compile Include="DataBase\Database.cs" />
+    <Compile Include="Web References\familyecare.com\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Device.cs" />
+    <Compile Include="Messages\MessageCell.cs" />
+    <Compile Include="Util\SQLite.cs" />
+    <Compile Include="Util\SQLite.MonoTouchAdmin.cs" />
+    <Compile Include="Util\SQLiteAsync.cs" />
+    <Compile Include="Messages\RefreshTableHeaderView.cs" />
+    <Compile Include="Util\LocationManagerDelegate.cs" />
+    <Compile Include="Util\DeviceListener.cs" />
+    <Compile Include="Messages\MessagesViewController.cs" />
+    <Compile Include="Messages\MessagesViewController.designer.cs">
+      <DependentUpon>MessagesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\MessageReadedCell.cs" />
+    <Compile Include="Messages\MessageReaderViewController.cs" />
+    <Compile Include="Messages\MessageReaderViewController.designer.cs">
+      <DependentUpon>MessageReaderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\MessageReplyViewController.cs" />
+    <Compile Include="Messages\MessageReplyViewController.designer.cs">
+      <DependentUpon>MessageReplyViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\EventsViewController.cs" />
+    <Compile Include="Events\EventsViewController.designer.cs">
+      <DependentUpon>EventsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\RefreshTableEventsHeaderView.cs" />
+    <Compile Include="Events\EventCell.cs" />
+    <Compile Include="SOS\SOSViewController.cs" />
+    <Compile Include="SOS\SOSViewController.designer.cs">
+      <DependentUpon>SOSViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="RootViewController.xib" />
+    <InterfaceDefinition Include="MainViewController.xib" />
+    <InterfaceDefinition Include="Messages\MessagesViewController.xib" />
+    <InterfaceDefinition Include="Messages\MessageReaderViewController.xib" />
+    <InterfaceDefinition Include="Messages\MessageReplyViewController.xib" />
+    <InterfaceDefinition Include="Events\EventsViewController.xib" />
+    <InterfaceDefinition Include="SOS\SOSViewController.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="images\" />
+    <Folder Include="Settings\" />
+    <Folder Include="DataBase\" />
+    <Folder Include="Service References\" />
+    <Folder Include="Util\" />
+    <Folder Include="Messages\" />
+    <Folder Include="Events\" />
+    <Folder Include="SOS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\boton_iPhone.png" />
+    <Content Include="images\boton_iPhone57x57.png" />
+    <Content Include="images\boton_iPhone72x72.png" />
+    <Content Include="images\launch320x480.png" />
+    <Content Include="images\launch640x960.png" />
+    <Content Include="Default.png" />
+    <Content Include="Default%402x.png" />
+    <Content Include="images\button_avisos.png" />
+    <Content Include="images\button_call.png" />
+    <Content Include="images\button_msg.png" />
+    <Content Include="images\blackArrow.png" />
+    <Content Include="images\blackArrow%402x.png" />
+    <Content Include="images\background.jpg" />
+    <Content Include="images\button_calendario.png" />
+    <Content Include="images\button_emergencia.png" />
+    <Content Include="images\button_mensajes.png" />
+    <Content Include="background.jpg" />
+    <Content Include="button_calendario.png" />
+    <Content Include="button_emergencia.png" />
+    <Content Include="button_mensajes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="button_avisos.png" />
+    <BundleResource Include="button_call.png" />
+    <BundleResource Include="button_msg.png" />
+    <BundleResource Include="Default-568h%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\familyecare.com" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.familyecare.com/wservices/deviceservices.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\familyecare.com</RelPath>
+      <UpdateFromURL>http://www.familyecare.com/wservices/deviceservices.asmx</UpdateFromURL>
+    </WebReferenceUrl>
+  </ItemGroup>
+</Project>

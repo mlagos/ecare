@@ -1,0 +1,1 @@
+--debug --aot=mtriple=armv7-darwin,full,static,asmonly,direct-icalls,no-direct-calls,iphone-abi,outfile=/monotouch.dll.armv7.s "/Users/mlagos/Projects/familyecare/familyecare/bin/iPhone/Debug/familyecare.app/monotouch.dll"

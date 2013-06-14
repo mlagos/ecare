@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "familyecare", "familyecare\familyecare.csproj", "{5379E041-ABE5-4155-9983-7F661F55F108}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5379E041-ABE5-4155-9983-7F661F55F108}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{5379E041-ABE5-4155-9983-7F661F55F108}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{5379E041-ABE5-4155-9983-7F661F55F108}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{5379E041-ABE5-4155-9983-7F661F55F108}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{5379E041-ABE5-4155-9983-7F661F55F108}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{5379E041-ABE5-4155-9983-7F661F55F108}.Debug|iPhone.Build.0 = Debug|iPhone
+		{5379E041-ABE5-4155-9983-7F661F55F108}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{5379E041-ABE5-4155-9983-7F661F55F108}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{5379E041-ABE5-4155-9983-7F661F55F108}.Release|iPhone.ActiveCfg = Release|iPhone
+		{5379E041-ABE5-4155-9983-7F661F55F108}.Release|iPhone.Build.0 = Release|iPhone
+		{5379E041-ABE5-4155-9983-7F661F55F108}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{5379E041-ABE5-4155-9983-7F661F55F108}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = familyecare\familyecare.csproj
+	EndGlobalSection
+EndGlobal

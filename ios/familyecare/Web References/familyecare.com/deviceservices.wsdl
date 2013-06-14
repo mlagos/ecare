@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s0="http://familyecare.com/" xmlns:tns="http://familyecare.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://familyecare.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://familyecare.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="GetVersion">
+        <xs:complexType />
+      </xs:element>
+      <xs:element name="GetVersionResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="GetVersionResult" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RegisterDeviceToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="deviceId" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="deviceToken" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RegisterDeviceTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="RegisterDeviceTokenResult" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetEmergencyNumbers">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="identifier" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetEmergencyNumbersResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="GetEmergencyNumbersResult" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMessages">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="identifier" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMessagesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="GetMessagesResult" type="tns:ArrayOfCustomMessageDto" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="ArrayOfCustomMessageDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomMessageDto" nillable="true" type="tns:CustomMessageDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CustomMessageDto">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="IdMessage" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IdUser" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IdActive" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Date" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DateReceived" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Text" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SendBy" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AssistedName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Replies" type="tns:ArrayOfReplyDto" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Confirmed" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOfReplyDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ReplyDto" nillable="true" type="tns:ReplyDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ReplyDto">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="IdReply" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IdMessage" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Date" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Text" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ReplyMessage">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="replyDto" type="tns:ReplyDto" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ReplyMessageResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="ReplyMessageResult" type="tns:ReplyDto" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateMessage">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="messageDto" type="tns:MessageDto" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="MessageDto">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="IdMessage" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IdUser" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IdActive" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DateSent" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DateReceipt" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MsgText" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UpdateMessageResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="UpdateMessageResult" type="tns:MessageDto" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetEventsByActive">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="identifier" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetEventsByActiveResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="GetEventsByActiveResult" type="tns:ArrayOfEventDto" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="ArrayOfEventDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="EventDto" nillable="true" type="tns:EventDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="EventDto">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="IdEvent" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IdActive" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Date" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Text" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SentDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="GetEvent">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="idEvent" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetEventResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="GetEventResult" type="tns:EventDto" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddLocation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="identifier" type="xs:string" />
+            <xs:element minOccurs="1" maxOccurs="1" name="lat" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="lon" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="date" type="xs:dateTime" />
+            <xs:element minOccurs="1" maxOccurs="1" name="isCellId" type="xs:boolean" />
+            <xs:element minOccurs="1" maxOccurs="1" name="bateryLevel" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="1" name="CID" type="xs:string" />
+            <xs:element minOccurs="1" maxOccurs="1" name="direction" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="mileage" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="speed" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="HDOP" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="CRC" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddLocationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="AddLocationResult" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddEncryptedLocation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="encryptedLocation" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddEncryptedLocationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="AddEncryptedLocationResult" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Ckeckin">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="deviceId" type="xs:string" />
+            <xs:element minOccurs="1" maxOccurs="1" name="lat" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="lon" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="date" type="xs:dateTime" />
+            <xs:element minOccurs="1" maxOccurs="1" name="isCellId" type="xs:boolean" />
+            <xs:element minOccurs="1" maxOccurs="1" name="bateryLevel" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="1" name="CID" type="xs:string" />
+            <xs:element minOccurs="1" maxOccurs="1" name="direction" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="mileage" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="speed" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="HDOP" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="CRC" type="xs:int" />
+            <xs:element minOccurs="1" maxOccurs="1" name="checkinId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CkeckinResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="CkeckinResult" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </types>
+  <message name="GetVersionSoapIn">
+    <part name="parameters" element="tns:GetVersion" />
+  </message>
+  <message name="GetVersionSoapOut">
+    <part name="parameters" element="tns:GetVersionResponse" />
+  </message>
+  <message name="RegisterDeviceTokenSoapIn">
+    <part name="parameters" element="tns:RegisterDeviceToken" />
+  </message>
+  <message name="RegisterDeviceTokenSoapOut">
+    <part name="parameters" element="tns:RegisterDeviceTokenResponse" />
+  </message>
+  <message name="GetEmergencyNumbersSoapIn">
+    <part name="parameters" element="tns:GetEmergencyNumbers" />
+  </message>
+  <message name="GetEmergencyNumbersSoapOut">
+    <part name="parameters" element="tns:GetEmergencyNumbersResponse" />
+  </message>
+  <message name="GetMessagesSoapIn">
+    <part name="parameters" element="tns:GetMessages" />
+  </message>
+  <message name="GetMessagesSoapOut">
+    <part name="parameters" element="tns:GetMessagesResponse" />
+  </message>
+  <message name="ReplyMessageSoapIn">
+    <part name="parameters" element="tns:ReplyMessage" />
+  </message>
+  <message name="ReplyMessageSoapOut">
+    <part name="parameters" element="tns:ReplyMessageResponse" />
+  </message>
+  <message name="UpdateMessageSoapIn">
+    <part name="parameters" element="tns:UpdateMessage" />
+  </message>
+  <message name="UpdateMessageSoapOut">
+    <part name="parameters" element="tns:UpdateMessageResponse" />
+  </message>
+  <message name="GetEventsByActiveSoapIn">
+    <part name="parameters" element="tns:GetEventsByActive" />
+  </message>
+  <message name="GetEventsByActiveSoapOut">
+    <part name="parameters" element="tns:GetEventsByActiveResponse" />
+  </message>
+  <message name="GetEventSoapIn">
+    <part name="parameters" element="tns:GetEvent" />
+  </message>
+  <message name="GetEventSoapOut">
+    <part name="parameters" element="tns:GetEventResponse" />
+  </message>
+  <message name="AddLocationSoapIn">
+    <part name="parameters" element="tns:AddLocation" />
+  </message>
+  <message name="AddLocationSoapOut">
+    <part name="parameters" element="tns:AddLocationResponse" />
+  </message>
+  <message name="AddEncryptedLocationSoapIn">
+    <part name="parameters" element="tns:AddEncryptedLocation" />
+  </message>
+  <message name="AddEncryptedLocationSoapOut">
+    <part name="parameters" element="tns:AddEncryptedLocationResponse" />
+  </message>
+  <message name="CkeckinSoapIn">
+    <part name="parameters" element="tns:Ckeckin" />
+  </message>
+  <message name="CkeckinSoapOut">
+    <part name="parameters" element="tns:CkeckinResponse" />
+  </message>
+  <portType name="DeviceServicesSoap">
+    <operation name="GetVersion">
+      <input message="tns:GetVersionSoapIn" />
+      <output message="tns:GetVersionSoapOut" />
+    </operation>
+    <operation name="RegisterDeviceToken">
+      <input message="tns:RegisterDeviceTokenSoapIn" />
+      <output message="tns:RegisterDeviceTokenSoapOut" />
+    </operation>
+    <operation name="GetEmergencyNumbers">
+      <input message="tns:GetEmergencyNumbersSoapIn" />
+      <output message="tns:GetEmergencyNumbersSoapOut" />
+    </operation>
+    <operation name="GetMessages">
+      <input message="tns:GetMessagesSoapIn" />
+      <output message="tns:GetMessagesSoapOut" />
+    </operation>
+    <operation name="ReplyMessage">
+      <input message="tns:ReplyMessageSoapIn" />
+      <output message="tns:ReplyMessageSoapOut" />
+    </operation>
+    <operation name="UpdateMessage">
+      <input message="tns:UpdateMessageSoapIn" />
+      <output message="tns:UpdateMessageSoapOut" />
+    </operation>
+    <operation name="GetEventsByActive">
+      <input message="tns:GetEventsByActiveSoapIn" />
+      <output message="tns:GetEventsByActiveSoapOut" />
+    </operation>
+    <operation name="GetEvent">
+      <input message="tns:GetEventSoapIn" />
+      <output message="tns:GetEventSoapOut" />
+    </operation>
+    <operation name="AddLocation">
+      <input message="tns:AddLocationSoapIn" />
+      <output message="tns:AddLocationSoapOut" />
+    </operation>
+    <operation name="AddEncryptedLocation">
+      <input message="tns:AddEncryptedLocationSoapIn" />
+      <output message="tns:AddEncryptedLocationSoapOut" />
+    </operation>
+    <operation name="Ckeckin">
+      <input message="tns:CkeckinSoapIn" />
+      <output message="tns:CkeckinSoapOut" />
+    </operation>
+  </portType>
+  <binding name="DeviceServicesSoap" type="tns:DeviceServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="GetVersion">
+      <soap:operation soapAction="http://familyecare.com/GetVersion" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RegisterDeviceToken">
+      <soap:operation soapAction="http://familyecare.com/RegisterDeviceToken" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetEmergencyNumbers">
+      <soap:operation soapAction="http://familyecare.com/GetEmergencyNumbers" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetMessages">
+      <soap:operation soapAction="http://familyecare.com/GetMessages" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ReplyMessage">
+      <soap:operation soapAction="http://familyecare.com/ReplyMessage" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="UpdateMessage">
+      <soap:operation soapAction="http://familyecare.com/UpdateMessage" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetEventsByActive">
+      <soap:operation soapAction="http://familyecare.com/GetEventsByActive" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetEvent">
+      <soap:operation soapAction="http://familyecare.com/GetEvent" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AddLocation">
+      <soap:operation soapAction="http://familyecare.com/AddLocation" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AddEncryptedLocation">
+      <soap:operation soapAction="http://familyecare.com/AddEncryptedLocation" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Ckeckin">
+      <soap:operation soapAction="http://familyecare.com/Ckeckin" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="DeviceServicesSoap12" type="tns:DeviceServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="GetVersion">
+      <soap12:operation soapAction="http://familyecare.com/GetVersion" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RegisterDeviceToken">
+      <soap12:operation soapAction="http://familyecare.com/RegisterDeviceToken" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetEmergencyNumbers">
+      <soap12:operation soapAction="http://familyecare.com/GetEmergencyNumbers" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetMessages">
+      <soap12:operation soapAction="http://familyecare.com/GetMessages" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ReplyMessage">
+      <soap12:operation soapAction="http://familyecare.com/ReplyMessage" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="UpdateMessage">
+      <soap12:operation soapAction="http://familyecare.com/UpdateMessage" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetEventsByActive">
+      <soap12:operation soapAction="http://familyecare.com/GetEventsByActive" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetEvent">
+      <soap12:operation soapAction="http://familyecare.com/GetEvent" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AddLocation">
+      <soap12:operation soapAction="http://familyecare.com/AddLocation" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AddEncryptedLocation">
+      <soap12:operation soapAction="http://familyecare.com/AddEncryptedLocation" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Ckeckin">
+      <soap12:operation soapAction="http://familyecare.com/Ckeckin" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="DeviceServices">
+    <port name="DeviceServicesSoap" binding="tns:DeviceServicesSoap">
+      <soap:address location="http://www.familyecare.com/wservices/deviceservices.asmx" />
+    </port>
+    <port name="DeviceServicesSoap12" binding="tns:DeviceServicesSoap12">
+      <soap12:address location="http://www.familyecare.com/wservices/deviceservices.asmx" />
+    </port>
+  </service>
+</definitions>
